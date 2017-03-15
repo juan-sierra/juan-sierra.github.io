@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+}
+
+.navbar-brand {
+    color: #454851;
+    transition: .25s ease-in;
+}
+
+.navbar-brand:hover {
+    color: #2ec0f9;
+    transition: .25s ease-out;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+#about,
+#projects {
+    margin-left: 180px;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jumbotron {
+    background: none;
+}
+
+.nav-link {
+    color: #454851;
+    border-bottom: 1px solid #2ec0f9;
+    width: 0;
+    transition: 0.25s ease-in;
+}
+
+.nav-link:hover {
+    color: #454851;
+    border-bottom: 1px solid #2ec0f9;
+    width: 50%;
+    transition: 0.25s ease-out;
+}
+
+#projects-title {
+    padding: 10px;
+}
+
+.p-img {
+    width: 100%;
+}
+
+#send-btn,
+#clear-btn {
+    float: right;
+    margin: 10px;
+}
+
+form {
+    width: 100%;
+}
+
+#form-title {
+    padding: 10px;
+    display: flex;
+}
+
+#contact {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact,
+#footer {
+    margin-left: 180px;
+}
+
+#footer {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.social-li {
+    display: inline-block;
+    padding: 16px;
+    font-size: 2em;
+}
+
+#footer-hr {
+    width: 100%;
+}
+
+
+/* sidebar slide to section on click*/
+
+
+/* slide sidebar in */
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        transform: translateX(-2in);
+        transition: 0.40s ease-in;
+    }
+    #about,
+    #projects,
+    #contact,
+    #footer {
+        margin-left: 0;
+    }
+}
+
+
+/* slide sidebar out */
+
+@media screen and (min-width: 600px) {
+    .sidebar {
+        transform: translateX();
+        transition: 0.40s ease-out;
+    }
+}

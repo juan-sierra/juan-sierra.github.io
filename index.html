@@ -91,12 +91,12 @@
 
         <section id="contact">
             <h1 class="display-4" id="form-title">Say Hi!</h1>
-            <form>
+            <form action="https://formspree.io/jasierra.garcia@gmail.com" method="POST">
                 <div class="form-group">
                     <label>First and last name</label>
-                    <input type="text" class="form-control" placeholder="First and Last Name" required>
+                    <input type="text" name="name" class="form-control" placeholder="First and last Name" required>
                     <label>Email address</label>
-                    <input type="email" class="form-control" placeholder="example@mail.com" required>
+                    <input type="email" name="replyto" class="form-control" placeholder="example@mail.com" required>
                     <label>Message</label>
                     <textarea class="form-control" id="message-input"></textarea>
                     <button type="submit" class="btn btn-success" id="send-btn">Send</button>

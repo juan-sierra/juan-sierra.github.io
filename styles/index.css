@@ -11,6 +11,7 @@ body {
 
 .container {
     height: 100%;
+    font-family: 'Rubik', sans-serif;
 }
 
 .navbar-brand {
@@ -156,8 +157,8 @@ form {
     #footer {
         margin-left: 0;
     }
-    #menu-btn{
-		position: fixed;
+    #hamburger{
+		position: absolute;
 		top: 1rem;
 		right: 1rem;
 		cursor: pointer;
@@ -176,7 +177,7 @@ form {
         transform: translateX();
         transition: 0.40s ease-in;
     }
-    #menu-btn {
+    #hamburger {
         display: none;
     }
 }

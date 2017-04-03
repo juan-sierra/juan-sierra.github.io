@@ -1,2 +1,2 @@
-# [I'm an inline-style link](https://juan-sierra.github.io/)
+# [juan-sierra.github.io](https://juan-sierra.github.io/)
 Main Website

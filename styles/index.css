@@ -101,6 +101,10 @@ form {
     flex-direction: column;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 #contact,
 #footer {
     margin-left: 180px;

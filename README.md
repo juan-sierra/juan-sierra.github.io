@@ -1,2 +1,2 @@
-# [juan-sierra.github.io](https://juan-sierra.github.io/)
+# [juan-sierra.github.io](https://juansierra.xyz/)
 Main Website

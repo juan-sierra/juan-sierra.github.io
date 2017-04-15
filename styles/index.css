@@ -29,7 +29,10 @@ body {
     height: 100%;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    z-index: 1;
 }
 
 /* hamburger menu */
@@ -56,26 +59,36 @@ body {
     background: none;
 }
 
+.fb-link {
+    font-size: 2em;
+}
+
 .nav-link {
     color: #454851;
-    border-bottom: 1px solid #2ec0f9;
-    width: 0;
-    transition: 0.25s ease-in;
 }
 
 .nav-link:hover {
-    color: #454851;
-    border-bottom: 1px solid #2ec0f9;
-    width: 50%;
-    transition: 0.25s ease-out;
+    color: #2EC0F9;
 }
 
 #projects-title {
     padding: 10px;
 }
 
-.p-img {
-    width: 100%;
+.project-link {
+    font-size: 2em;
+    color: #454851;
+    transition: 0.30s ease-out;
+}
+
+.project-link:hover {
+    color: #2ec0f9;
+    transition: 0.35s ease-out;
+}
+
+.img-credit {
+    font-size: 11px;
+    color: #919191;
 }
 
 #send-btn,
@@ -162,7 +175,7 @@ form {
         margin-left: 0;
     }
     #hamburger{
-		position: absolute;
+		position: fixed;
 		top: 1rem;
 		right: 1rem;
 		cursor: pointer;

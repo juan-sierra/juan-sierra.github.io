@@ -1,0 +1,12 @@
+{
+  "name": "juan-sierra.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "repository": "https://github.com/juan-sierra/juan-sierra.github.io.git",
+  "author": "Juan Sierra <jasierra.garcia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

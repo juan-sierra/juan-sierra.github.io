@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/juansierra
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://juansierra.xyz
+  * I am juansierra (https://keybase.io/juansierra) on keybase.
+  * I have a public key with fingerprint 8543 3395 2A64 8BAE 4A00  AE95 FC69 6856 9BE5 465E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01203d3aaf3152a1b29f76f832616a4c0dc42a04786a48e4aec1a4e34e974ac500190a",
+            "fingerprint": "854333952a648bae4a00ae95fc6968569be5465e",
+            "host": "keybase.io",
+            "key_id": "fc6968569be5465e",
+            "kid": "01014727aab5149f8b2c31c704426944406b8472ed2ba929fd92f7932b88339162380a",
+            "uid": "8a91d2a158e60b7983bceffe2a810d19",
+            "username": "juansierra"
+        },
+        "service": {
+            "hostname": "juansierra.xyz",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1492883682,
+    "expire_in": 157680000,
+    "prev": "b4fc1c272d45429d269e8d93dc5ec194dbefcb9ce6c7c450ba0679bcee618f1b",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.68
+Comment: https://keybase.io/crypto
+
+yMNpAnicbVJ9TJVVHL6oxGJAqFDZEOUFVg3C9+O8X5eBN0JZluCVYCHC5bzve17u
+C/eL+8GHRCuDtIXVRhFyEU2XNIlvEk3WuAqxJiL0NYymCSnhElrRalOxc1n+Veef
+s9/vPM9znud3znDoal1wwF3NnOu9sb0w4KLP69G9fKdpppqQ7EoVoa8mStHKhiwK
+crlNpZpC6AmSoklGYSBUGYqlISXRospzqsDQHMVBIJOKDGhIAl7AlYAARDIFAWIA
+EnkAZZYkKZGERCKharZi5HQ4NZsbywosYBhGxIocECSIeSQJkciqMidyAsuJEmIB
+xyJMNNtdfgY2J0EXStLsuIcL04q9/8E/8E1SgKd5CCWWAqIqSLTMUDJPAkBzIgCA
+5CQBA5BCS1DEoRSRVnmRoSVBwMYojmaEFd+eFTkBipSC47MC4kiJFwVGkpGqIhoK
+FKlQoh/oQk4btCKMLvFAm0tDTickahIJ3C/XZOQfrT/LfzBJlVX7MN/htLvtst2C
+z8xut8Ol93PdVQ4/uAJJpn9lTJJmU/AsMaMcOV2a3UboKYyU3ZpfF2elcQJOoBMJ
+VOnQnMik+REszwkkXv57UDmWlIAqUzLN0wpgAS0qeCpIUERGkVn8hCJQJKTKkigj
+TuZlwJISJDlexKkRRwkqJRH+YGU2O6HnsU1YjCVdWrENuj1ORNSc9+1dowsI1j0U
+uMr/x3TBD4c/+HlHxHBdy/3HXrmh890JObA/Yv7Fyy0xvx995NHmvOhM94a43s87
+plTlF/XQqC3XeuXUQMSlt+LyuYq+pZ7YjOihyNCxmfI3BxYMmS8ErJ0I8zhCDPxG
+/YffZjT81j5Xmfha9vuOwuq8Z975+YPzXb7ZYcugd72WMhk0WlC7NUx/M9wC2hMq
+XhKncq4MLry9bcM0FZiDyg4hpn/5YPet4q5jKrfNsHP1u2vTM9Ozk/O+2OE+24Om
+GqOK1NiRxL10Uqq11vhnTLbx8V3mVYumtF83GyLHhiaHZ2daLwvJH8UajneZCt27
+m1JfN97uKzOPV1obLh5ropcjNqUebr7wd37KVV+8KbotrK9YnB7qybVW9E7FWmue
+WziwLtKZ9Vm8/vpoz4913+0+U5//xCbL0SPfbNzT/P3JHYG+zuH9tecaRpbpoo5r
+xv7kr57tnmu7u2htmp2tWv7y+WDGi7KKxj0ZyzF/jKbPxaWMxxJvtI35jI0mak38
+nqIhNfrrW42dBYuj3mt/jXSuy1i81zfx6vp6e2TrOUY+nhXafZvMuTrhPfGpb/rp
+st76wx2lUsdSWkmBFPDJzrkthauigp4M2hU1MXZ6zFw7SDw1nzYJUwNbDSd+At30
+D/M3L1VuL+3vkOiphLQW49Yl+vR8SN2ZLfvutZRcaK87KS/Of3x/8yldwkCCkBxk
+eS8u4+x14h/hScCS
+=FC01
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/juansierra
+
+==================================================================

@@ -11,7 +11,7 @@ body {
 
 .container {
     height: 100%;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .navbar-brand {
@@ -53,6 +53,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.cross-background {
+    background: #91F5AD;
+}
+
+.brand-text {
+    color: #2EC0F9;
+}
+
+#role {
+    color: #2EC0F9;
 }
 
 .jumbotron {

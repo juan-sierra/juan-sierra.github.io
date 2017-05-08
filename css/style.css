@@ -1,0 +1,15 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 980px;
+    min-height: 100%;
+    margin: auto;
+    padding: 1em;
+    font-family: 'Work Sans', sans-serif;
+}

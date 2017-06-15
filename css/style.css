@@ -26,12 +26,12 @@ html, body {
 }
 
 .fancy-h1 {
-    font-size: 5em;
+    font-size: 6em;
     font-weight: lighter;
 }
 
 .fancy-p {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .fancy-link {
@@ -46,6 +46,6 @@ html, body {
 }
 
 .fancy-footer-text {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: lighter;
 }

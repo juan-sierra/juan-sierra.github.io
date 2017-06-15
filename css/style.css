@@ -1,0 +1,51 @@
+*  {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #FFF133;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    color: #FBFEF9;
+}
+
+.container {
+    max-width: 100%;
+    height: 100%;
+    background-color: #4062BB;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fancy-h1 {
+    font-size: 5em;
+    font-weight: lighter;
+}
+
+.fancy-p {
+    font-size: 2em;
+}
+
+.fancy-link {
+    text-decoration: none;
+    background: #F45B69;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.fancy-link:hover {
+    text-decoration: underline;
+}
+
+.fancy-footer-text {
+    font-size: 1.5em;
+    font-weight: lighter;
+}

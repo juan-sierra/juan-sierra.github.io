@@ -1,0 +1,6 @@
+@import url(normalize.css);
+*::before, *::after {
+  box-sizing: border-box; }
+
+.name {
+  font-family: monospace; }

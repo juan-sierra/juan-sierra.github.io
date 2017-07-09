@@ -1,0 +1,12 @@
+@import "normalize.css";
+
+$padding: 1.5em;
+$gutter: 1.5em;
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+.name {
+    font-family: monospace;
+}

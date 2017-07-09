@@ -1,0 +1,33 @@
+{
+  "name": "juan-sierra.github.io",
+  "version": "1.0.0",
+  "description": "My main website!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan-sierra/juan-sierra.github.io.git"
+  },
+  "author": "Juan Sierra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juan-sierra/juan-sierra.github.io/issues"
+  },
+  "homepage": "https://github.com/juan-sierra/juan-sierra.github.io#readme",
+  "dependencies": {
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "normalize-css": "^2.3.1",
+    "normalize.css": "^7.0.0",
+    "pug": "^2.0.0-rc.2",
+    "pump": "^1.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  }
+}

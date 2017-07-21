@@ -1,12 +1,41 @@
-@import "normalize.css";
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
-$padding: 1.5em;
+// font settings
+$font-stack: 'Work Sans', sans-serif;
+
+$h1: 3em;
+$h2: 2.5em;
+
+$a: 1.5em;
+$p: 1.5em;
+
+// gutters + paddings
 $gutter: 1.5em;
+$reset: 0;
 
-*::before, *::after {
+
+// colors
+$white: #FDFFFC;
+$dark-blue: #545E75;
+$blue: #3DA5D9;
+
+* {
+    // outline: 5px solid $dark-blue;
+}
+
+*::after, *::before {
     box-sizing: border-box;
 }
 
-.name {
-    font-family: monospace;
+body {
+    background-color: $white;
+    display: grid;
+    grid-gap: $gutter;
+    max-width: 980px;
+    margin: $reset auto;
+
+    font-family: $font-stack;
 }
+
+// contact form style

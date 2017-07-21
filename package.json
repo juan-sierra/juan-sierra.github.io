@@ -1,7 +1,7 @@
 {
   "name": "juan-sierra.github.io",
   "version": "1.0.0",
-  "description": "My main website!",
+  "description": "portfolio website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,18 +16,15 @@
     "url": "https://github.com/juan-sierra/juan-sierra.github.io/issues"
   },
   "homepage": "https://github.com/juan-sierra/juan-sierra.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "normalize-css": "^2.3.1",
-    "normalize.css": "^7.0.0",
-    "pug": "^2.0.0-rc.2",
-    "pump": "^1.0.2"
+    "gulp-uglify": "^3.0.0"
   },
-  "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1"
+  "dependencies": {
+    "pump": "^1.0.2"
   }
 }

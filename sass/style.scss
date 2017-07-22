@@ -1,14 +1,20 @@
 @import "normalize";
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+// @import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+// @import url('https://fonts.googleapis.com/css?family=Audiowide');
+
 
 // font settings
-$font-stack: 'Work Sans', sans-serif;
+// $font-stack: 'Work Sans', sans-serif;
+$font-stack: 'Poppins', sans-serif;
+// $font-stack: 'Audiowide', cursive;
 
 $h1: 3em;
 $h2: 2.5em;
+$h3: 2em;
 
-$a: 1.5em;
-$p: 1.5em;
+$a: 1.2em;
+$p: 1.3em;
 
 // gutters + paddings
 $gutter: 1.5em;
@@ -17,8 +23,12 @@ $reset: 0;
 
 // colors
 $white: #FDFFFC;
-$dark-blue: #545E75;
-$blue: #3DA5D9;
+
+$dark-gray: #c9c9c9;
+$light-gray: #e3e3e3;
+
+$dark-blue: #89bdd3;
+$light-blue: #9ad3de;
 
 * {
     // outline: 5px solid $dark-blue;
@@ -26,16 +36,75 @@ $blue: #3DA5D9;
 
 *::after, *::before {
     box-sizing: border-box;
+
 }
 
 body {
     background-color: $white;
+
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(auto, auto);
     grid-gap: $gutter;
-    max-width: 980px;
-    margin: $reset auto;
 
     font-family: $font-stack;
+}
+
+.about, .projects, .work--exp, .contact, .footer {
+    padding: $gutter;
+}
+
+.about {
+    grid-column-start: 1;
+    grid-row-start: 1;
+	grid-row-end: 1;
+
+    background: linear-gradient(160deg, $light-blue 50%, $light-gray 50%);
+
+    .name, .role, .nav--link {
+        color: $white;
+    }
+
+    .nav {
+
+        .nav--container {
+            padding: 0;
+            list-style: none;
+
+            display: flex;
+            justify-content: flex-end;
+
+            margin: $gutter;
+        }
+
+        .list--item {
+            padding: $gutter;
+        }
+        .nav--link {
+            text-decoration: none;
+        }
+    }
+}
+
+.h1 {
+    font-size: $h1;
+}
+
+.h2 {
+    font-size: $h2;
+    font-weight: lighter;
+}
+
+.h3 {
+    font-size: $h3;
+}
+
+.a {
+    font-size: $a;
+}
+
+.p {
+    font-size: $p;
 }
 
 // contact form style

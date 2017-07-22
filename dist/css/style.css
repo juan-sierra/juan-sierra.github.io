@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 html {
   line-height: 1.15;
   /* 1 */
@@ -396,7 +396,44 @@ template {
 body {
   background-color: #FDFFFC;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(auto, auto);
   grid-gap: 1.5em;
-  max-width: 980px;
-  margin: 0 auto;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Poppins", sans-serif; }
+
+.about, .projects, .work--exp, .contact, .footer {
+  padding: 1.5em; }
+
+.about {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background: linear-gradient(160deg, #9ad3de 50%, #e3e3e3 50%); }
+  .about .name, .about .role, .about .nav--link {
+    color: #FDFFFC; }
+  .about .nav .nav--container {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.5em; }
+  .about .nav .list--item {
+    padding: 1.5em; }
+  .about .nav .nav--link {
+    text-decoration: none; }
+
+.h1 {
+  font-size: 3em; }
+
+.h2 {
+  font-size: 2.5em;
+  font-weight: lighter; }
+
+.h3 {
+  font-size: 2em; }
+
+.a {
+  font-size: 1.2em; }
+
+.p {
+  font-size: 1.3em; }

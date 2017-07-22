@@ -19,7 +19,7 @@ bs = require("browser-sync").create();
 gulp.task("sass", function () {
     return gulp.src("./sass/**.scss")
         .pipe(sass())
-        .pipe(gulp.dest("./src/css"))
+        .pipe(gulp.dest("./dist/css"))
         .pipe(bs.reload({
             stream: true
         }));
@@ -29,7 +29,7 @@ gulp.task("uglify", function (cb) {
     pump([
         gulp.src("./js/**.js"),
         uglify(),
-        gulp.dest("./src/js"),
+        gulp.dest("./dist/js"),
         bs.reload({
             stream: true
         })

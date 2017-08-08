@@ -393,47 +393,55 @@ template {
 *::after, *::before {
   box-sizing: border-box; }
 
-body {
-  background-color: #FDFFFC;
+html, body {
+  min-height: 100%; }
+
+.content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(auto, auto);
   grid-gap: 1.5em;
+  min-height: 100%;
   font-family: "Poppins", sans-serif; }
 
-.about, .projects, .work--exp, .contact, .footer {
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(120deg, #89bdd3 50%, #9ad3de 50%);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.fancy {
+  font-family: "chippewa-falls", sans-serif; }
+
+.about__content {
+  text-align: center;
+  color: #FDFFFC; }
+  .about__content .name {
+    font-weight: lighter;
+    font-size: 5em; }
+  .about__content .role {
+    font-size: 2.5em; }
+
+.nav .nav__wrapper {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
   padding: 1.5em; }
 
-.about {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  background: linear-gradient(160deg, #9ad3de 50%, #e3e3e3 50%); }
-  .about .name, .about .role, .about .nav--link {
-    color: #FDFFFC; }
-  .about .nav .nav--container {
-    padding: 0;
-    list-style: none;
+.nav .nav__link {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #FDFFFC;
+  cursor: pointer; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.5em; }
+  .projects .project__headline {
     display: flex;
-    justify-content: flex-end;
-    margin: 1.5em; }
-  .about .nav .list--item {
-    padding: 1.5em; }
-  .about .nav .nav--link {
-    text-decoration: none; }
-
-.h1 {
-  font-size: 3em; }
-
-.h2 {
-  font-size: 2.5em;
-  font-weight: lighter; }
-
-.h3 {
-  font-size: 2em; }
-
-.a {
-  font-size: 1.2em; }
-
-.p {
-  font-size: 1.3em; }
+    justify-content: flex-start;
+    align-items: center; }
+    .projects .project__headline .project__headtext {
+      font-size: 3em; }

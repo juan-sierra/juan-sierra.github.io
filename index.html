@@ -2,53 +2,46 @@
 <html></html>
 <head>
   <title>juan sierra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="./dist/css/style.css"/>
+  <script src="https://use.typekit.net/ufn3nqv.js"></script>
+  <script src="https://use.typekit.net/nvs6qkr.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
-<body>
+<body></body>
+<main class="content">
   <section class="about">
-    <h1 class="name h1">Juan Sierra</h1>
-    <h2 class="role h2">Front End Developer</h2>
+    <article class="about__content">
+      <h1 class="h1 name fancy">Juan Sierra</h1>
+      <h2 class="h2 role">Front End Developer</h2>
+    </article>
     <nav class="nav">
-      <ul class="nav--container">
-        <li class="list--item"> <a class="nav--link a" href="#">about</a></li>
-        <li class="list--item"> <a class="nav--link a" href="#">projects</a></li>
-        <li class="list--item"> <a class="nav--link a" href="#">experience</a></li>
-        <li class="list--item"> <a class="nav--link a" href="#">contact</a></li>
+      <ul class="nav__wrapper">
+        <li class="nav__item"><a class="nav__link" href="#">about</a></li>
+      </ul>
+      <ul class="nav__wrapper">
+        <li class="nav__item"><a class="nav__link" href="#">projects</a></li>
+      </ul>
+      <ul class="nav__wrapper">
+        <li class="nav__item"><a class="nav__link" href="#">experience</a></li>
+      </ul>
+      <ul class="nav__wrapper">
+        <li class="nav__item"><a class="nav__link" href="#">contact</a></li>
       </ul>
     </nav>
   </section>
   <section class="projects">
-    <h2 class="p--title h2">Projects</h2>
-    <article class="card">
-      <h3 class="card--title h3">Immigration Rights Hub</h3>
-      <p class="card--description p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article>
-    <article class="card">
-      <h3 class="card--title h3">Smartodo</h3>
-      <p class="card--description p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article>
-    <article class="card">
-      <h3 class="card--title h3">Ecomanyatta</h3>
-      <p class="card--description p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <header class="project__headline">
+      <h2 class="h1 fancy project__headtext">Projects</h2>
+    </header>
+    <article class="project__card">
+      <header class="project__header">
+        <h2 class="h2 project__title">Pro 1</h2>
+      </header>
+      <div class="project__details">
+        <p class="p project_para"> </p>
+      </div>
     </article>
   </section>
-  <section class="work--exp">
-    <h2 class="exp--title h2">Work Experience</h2>
-    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </section>
-  <section class="contact">
-    <h2 class="c--title h2">Contact Me!</h2>
-    <form class="contact--form">
-      <label>Name:</label>
-      <input type="input" id="name"/>
-      <label>Email:</label>
-      <input type="email" id="mail"/>
-      <label>Message:</label>
-      <textarea id="message"></textarea>
-    </form>
-  </section>
-  <footer class="footer">
-    <p class="f--text">Built by Juan Sierra - 2017.</p>
-  </footer>
   <script src="./dist/js/index.js"></script>
-</body>
+</main>

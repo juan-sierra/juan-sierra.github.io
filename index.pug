@@ -5,10 +5,10 @@ head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     
     link(rel="stylesheet" href="./dist/css/style.css")
-    script(src='https://use.typekit.net/ufn3nqv.js')
-    script(src='https://use.typekit.net/nvs6qkr.js')
-    script.
-        try{Typekit.load({ async: true });}catch(e){}
+    //- script(src='https://use.typekit.net/ufn3nqv.js')
+    //- script(src='https://use.typekit.net/nvs6qkr.js')
+    //- script.
+    //-     try{Typekit.load({ async: true });}catch(e){}
 body
 
 main.content
@@ -21,21 +21,40 @@ main.content
             h2.h2.role=role
         
         nav.nav
-            - var navItems = ["about", "projects", "experience",  "contact"]
+            - var navItems = ["about", "work", "resume",  "contact"]
             each val in navItems
                 ul.nav__wrapper
                     li.nav__item
                         a(href="#").nav__link=val
+                    
+    section.work
+        header.work__head
+            h2.work__title Work
 
-    section.projects
-        header.project__headline
-            h2.h1.fancy.project__headtext Projects
-        article.project__card
-            header.project__header
-                h2.h2.project__title Pro 1
-            div.project__details
-                p.p.project_para 
-                    
-                    
+        div.projects__wrapper
+            article.card
+                header.card__head
+                    h3.card__title bonjour
+                section.card__para
+                    p.para Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.
+
+            article.card
+                header.card__head
+                    h3.card__title bonjour
+                section.card__para
+                    p.para Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.
+
+            article.card
+                header.card__head
+                    h3.card__title bonjour
+                section.card__para
+                    p.para Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.
+
+            article.card
+                header.card__head
+                    h3.card__title bonjour
+                section.card__para
+                    p.para Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.
+
             
     script(src="./dist/js/index.js")

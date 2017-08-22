@@ -1,60 +1,86 @@
 html
 head
     title juan sierra
-    
+
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    
+
     link(rel="stylesheet" href="./dist/css/style.css")
-    //- script(src='https://use.typekit.net/ufn3nqv.js')
-    //- script(src='https://use.typekit.net/nvs6qkr.js')
-    //- script.
-    //-     try{Typekit.load({ async: true });}catch(e){}
+    script(src='https://use.typekit.net/ufn3nqv.js')
+    script(src='https://use.typekit.net/nvs6qkr.js')
+    script.
+        try{Typekit.load({ async: true });}catch(e){}
 body
+    section.main__nav
+        header.logo__head
+            h1.logo__text JS
 
-main.content
-    section.about
-        article.about__content
-            - var name = "Juan Sierra"
-            - var role = "Front End Developer"
-
-            h1.h1.name.fancy=name
-            h2.h2.role=role
-        
         nav.nav
-            - var navItems = ["about", "work", "resume",  "contact"]
+            - var navItems = ["about", "work", "resume", "contact"]
             each val in navItems
                 ul.nav__wrapper
                     li.nav__item
-                        a(href="#").nav__link=val
-                    
+                        a.nav__link(href="#")=val
+
+    section.about
+        header.about__head
+            h1.name Juan 
+                span.underline Sierra
+            h2.role Front End Developer
+
+        article.about__bio
+            - var bio = "Just an awesome dude who loves tacos, music, and code. I focus on creating minimal and meaninful experiences on the web by keeping accesibility and performance in mind."
+            p.p.about__para= bio
+
     section.work
         header.work__head
             h2.work__title Work
 
-        div.projects__wrapper
-            article.card
+        section.card__wrapper
+            article.card.pro__one
                 header.card__head
-                    h3.card__title bonjour
-                section.card__para
-                    p.para Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.
+                    h3 Pro 1
+                div.card__desc
+                    p.card__para Hello
 
-            article.card
+            article.card.pro__two
                 header.card__head
-                    h3.card__title bonjour
-                section.card__para
-                    p.para Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.
+                    h3 Pro 2
+                div.card__desc
+                    p.card__para Hello
 
-            article.card
+            article.card.pro__three
                 header.card__head
-                    h3.card__title bonjour
-                section.card__para
-                    p.para Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.
+                    h3 Pro 3
+                div.card__desc
+                    p.card__para Hello
 
-            article.card
+            article.card.pro__four
                 header.card__head
-                    h3.card__title bonjour
-                section.card__para
-                    p.para Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.
+                    h3 Pro 4
+                div.card__desc
+                    p.card__para Coming soon...
 
-            
+    section.resume
+        header.resume__head
+            h2 Some Content here
+
+
+    section.contact
+        header.contact__head
+            h3 Contact me!
+        div.form__wrapper
+            form(method="POST")
+                label.label(for="name") Name
+                input.name__input.input(type="text" name="name")
+
+                label.label(for="name") Email
+                input.email__input.input(type="email" name="email")
+
+                label.label(for="message") Message
+                textarea.text__area
+
+    section.footer
+        footer.footer__wrapper
+            div.footer__text.rights Juan Sierra - 2017
+
     script(src="./dist/js/index.js")

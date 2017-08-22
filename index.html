@@ -4,14 +4,15 @@
   <title>juan sierra</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="./dist/css/style.css"/>
+  <script src="https://use.typekit.net/ufn3nqv.js"></script>
+  <script src="https://use.typekit.net/nvs6qkr.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
-<body></body>
-<main class="content">
-  <section class="about">
-    <article class="about__content">
-      <h1 class="h1 name fancy">Juan Sierra</h1>
-      <h2 class="h2 role">Front End Developer</h2>
-    </article>
+<body>
+  <section class="main__nav">
+    <header class="logo__head">
+      <h1 class="logo__text">JS</h1>
+    </header>
     <nav class="nav">
       <ul class="nav__wrapper">
         <li class="nav__item"><a class="nav__link" href="#">about</a></li>
@@ -27,44 +28,78 @@
       </ul>
     </nav>
   </section>
+  <section class="about">
+    <header class="about__head">
+      <h1 class="name">Juan <span class="underline">Sierra</span></h1>
+      <h2 class="role">Front End Developer</h2>
+    </header>
+    <article class="about__bio">
+      <p class="p about__para">Just an awesome dude who loves tacos, music, and code. I focus on creating minimal and meaninful experiences on the web by keeping accesibility and performance in mind.</p>
+    </article>
+  </section>
   <section class="work">
     <header class="work__head">
       <h2 class="work__title">Work</h2>
     </header>
-    <div class="projects__wrapper">
-      <article class="card">
+    <section class="card__wrapper">
+      <article class="card pro__one">
         <header class="card__head">
-          <h3 class="card__title">bonjour</h3>
+          <h3>Pro 1</h3>
         </header>
-        <section class="card__para">
-          <p class="para">Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.</p>
-        </section>
+        <div class="card__desc">
+          <p class="card__para">Hello</p>
+        </div>
       </article>
-      <article class="card">
+      <article class="card pro__two">
         <header class="card__head">
-          <h3 class="card__title">bonjour</h3>
+          <h3>Pro 2</h3>
         </header>
-        <section class="card__para">
-          <p class="para">Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.</p>
-        </section>
+        <div class="card__desc">
+          <p class="card__para">Hello</p>
+        </div>
       </article>
-      <article class="card">
+      <article class="card pro__three">
         <header class="card__head">
-          <h3 class="card__title">bonjour</h3>
+          <h3>Pro 3</h3>
         </header>
-        <section class="card__para">
-          <p class="para">Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.</p>
-        </section>
+        <div class="card__desc">
+          <p class="card__para">Hello</p>
+        </div>
       </article>
-      <article class="card">
+      <article class="card pro__four">
         <header class="card__head">
-          <h3 class="card__title">bonjour</h3>
+          <h3>Pro 4</h3>
         </header>
-        <section class="card__para">
-          <p class="para">Four loko unicorn prism quinoa 3 wolf moon lomo ennui stumptown chartreuse microdosing YOLO bespoke hammock. Ennui banjo church-key distillery. Humblebrag enamel pin cold-pressed photo booth.</p>
-        </section>
+        <div class="card__desc">
+          <p class="card__para">Coming soon...</p>
+        </div>
       </article>
+    </section>
+  </section>
+  <section class="resume">
+    <header class="resume__head">
+      <h2>Some Content here</h2>
+    </header>
+  </section>
+  <section class="contact">
+    <header class="contact__head">
+      <h3>Contact me!</h3>
+    </header>
+    <div class="form__wrapper">
+      <form method="POST">
+        <label class="label" for="name">Name</label>
+        <input class="name__input input" type="text" name="name"/>
+        <label class="label" for="name">Email</label>
+        <input class="email__input input" type="email" name="email"/>
+        <label class="label" for="message">Message</label>
+        <textarea class="text__area"></textarea>
+      </form>
     </div>
   </section>
+  <section class="footer">
+    <footer class="footer__wrapper">
+      <div class="footer__text rights">Juan Sierra - 2017</div>
+    </footer>
+  </section>
   <script src="./dist/js/index.js"></script>
-</main>
+</body>

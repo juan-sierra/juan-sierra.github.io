@@ -1,16 +1,11 @@
 @import "normalize";
-// @import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 // @import url('https://fonts.googleapis.com/css?family=Poppins');
 // @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
-
 // font settings
-// $font-stack: 'Work Sans', sans-serif;
-// $font-stack: 'Poppins', sans-serif;
-$font-stack: monospace;
-// $font-stack: 'Audiowide', cursive;
-// fancy font
-// $fancy-font:"chippewa-falls",sans-serif;
+$font-stack: "Work Sans", sans-serif;
+$fancy-font: "chippewa-falls", sans-serif;
 
 $h1: 5em;
 $h2: 2.5em;
@@ -23,145 +18,121 @@ $p: 1.2em;
 $gt: 1.5em;
 $reset: 0;
 
-
 // colors
-$white: #FDFFFC;
-$grey: #EEE;
-$black: #484a4a;
 
-$dark-gray: #c9c9c9;
-$light-gray: #e3e3e3;
-
-$dark-blue: #89bdd3;
-$light-blue: #9ad3de;
-
-* {
-    // outline: 2px solid $light-blue;    
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: 2px solid slateblue;
 }
 
-*::after, *::before {
-    box-sizing: border-box;
+body {
+  display: grid;
+  grid-template-columns: repeat(4, [col-start] 1fr, [col-end]);
+  grid-template-rows: repeat(4, minmax(50%, auto));
+  grid-template-areas: 
+    '.  header  .'
+    '.  about-section .'
+    '.  work-section  .'
+    '.  resume-section .'
+    '.  contact-section .'
+    '.  footer  .';
+  grid-gap: $gt;
+  padding: $gt;
+  font-family: $font-stack;
 }
 
-html, body {
-    height: 100vh;
+section {
+  padding: $gt;
 }
 
-.content {
-    display: grid;
-    grid-gap: $gt;
-    height: 100vh;
-    
-    
-    font-family: $font-stack;
+.main__nav {
+  grid-area: header;
+  grid-column: 1 / 12;
+  // height: 35%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: $gt;
+  
+  // logo
+  .logo__head {
+
+    .logo__text {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: lighter;
+      font-family: $fancy-font;
+      display: none;
+    }
+
+  }
+
+  // navigation menu
+  .nav {
+
+    .nav__wrapper {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      text-align: right;
+      .nav__item {
+        padding: $gt / 6;
+        margin: $gt / 2;
+
+        .nav__link {
+          font-size: $a;
+        }
+
+      }
+
+    }
+  }
+
 }
 
 .about {
+  grid-area: about-section;
+  grid-column: 1 / 12;
+  
+  .about__head {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    background: linear-gradient(120deg, $grey 60%, $white 40%);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.fancy {
-        font-family: $font-stack;
-}
-
-.about__content {
-    text-align: center;
-    color: $black;
-
     .name {
-        font-weight: lighter;
-        font-size: $h1;
+      font-family: $fancy-font;
+      font-size: $h1;
     }
     .role {
-        font-size: $h2;
+      font-size: $h2;
+      font-weight: lighter;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: $gt / 3;
+      width: 5em;
     }
-}
 
-.nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: $gt;
-    text-align: center;
-    .nav__wrapper {
-        padding: 0;
-        list-style: none;
-    }
-    .nav__item {
-        // padding: $gt;
-    }
-    .nav__link {
-        font-size: $a;
-        color: $black;
-    }
+  }
 }
 
 .work {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: $gt;
-    height: 100vh;
-    .work__head {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .work__title {
-            font-size: $h2;
-        }
-    }
+  grid-area: work-section;
+  grid-column: 1 / 12;
 }
 
-.projects__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, minmax(15em, auto));
-    grid-gap: $gt;
-    padding: $gt;
-    .card {
-        display: flex;
-        flex-direction: column;
-        padding: $gt;
-        outline: 2px solid $black;
-        .card__head {
-            padding: $gt;
+.resume {
+  grid-area: resume-section;
+  grid-column: 1 / 12;
+}
 
-            // part of the card hover effect
-            opacity: 1;
-            transition: opacity 1s ease-out;
-            .card__title {
-                font-size: $h3;
-            }
-        }
-        .card__para {
-            padding: $gt;
-            .para {
-                font-size: $p;
-                line-height: $gt;
-                transform: translateX(-5em);
-                opacity: 0;
-                transition: 1s ease-out;
-            }
-        }
-    }
-    // card hover effect
-    .card:hover {
-        // .card__head {
-        //     opacity: 0;
-        //     transition: opacity 0.25s ease-out;
-        // }
-        .card__para:hover {
-            .para {
-                opacity: 1;
-                transform: translateX(0);
-                transition: 1s ease-out;
-            }
-        }
-    }
+.contact {
+  grid-area: contact-section;
+  grid-column: 1 / 12;
+}
+
+.footer {
+  grid-area: footer;
+  grid-column: 1 / 12;
+  .footer__wrapper {
+    text-align: center;
+  }
 }

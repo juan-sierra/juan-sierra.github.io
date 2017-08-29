@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+@import url("https://rsms.me/interface/interface.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -393,8 +393,7 @@ template {
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  outline: 2px solid slateblue; }
+  box-sizing: border-box; }
 
 body {
   display: grid;
@@ -403,10 +402,17 @@ body {
   grid-template-areas: '.  header  .' '.  about-section .' '.  work-section  .' '.  resume-section .' '.  contact-section .' '.  footer  .';
   grid-gap: 1.5em;
   padding: 1.5em;
-  font-family: "Work Sans", sans-serif; }
+  font-family: Interface, sans-serif;
+  background-color: #F7F7FF; }
 
 section {
   padding: 1.5em; }
+
+p {
+  line-height: 1.5em; }
+
+.fancy {
+  font-family: "chippewa-falls", sans-serif; }
 
 .main__nav {
   grid-area: header;
@@ -414,43 +420,96 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5em; }
-  .main__nav .logo__head .logo__text {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: lighter;
-    font-family: "chippewa-falls", sans-serif;
-    display: none; }
-  .main__nav .nav .nav__wrapper {
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    text-align: right; }
-    .main__nav .nav .nav__wrapper .nav__item {
-      padding: 0.25em;
-      margin: 0.75em; }
-      .main__nav .nav .nav__wrapper .nav__item .nav__link {
-        font-size: 1.5em; }
+  .main__nav .logo__head {
+    position: fixed;
+    left: 1.5em; }
+    .main__nav .logo__head .logo__text {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: lighter;
+      font-family: "chippewa-falls", sans-serif; }
+  .main__nav .nav {
+    position: fixed;
+    right: 1.5em; }
+    .main__nav .nav .nav__wrapper {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      text-align: right; }
+      .main__nav .nav .nav__wrapper .nav__item {
+        padding: 0.25em;
+        margin: 0.75em; }
+        .main__nav .nav .nav__wrapper .nav__item .nav__link {
+          font-size: 1.5em;
+          color: #33312E;
+          text-decoration: none; }
 
 .about {
   grid-area: about-section;
   grid-column: 1 / 12; }
   .about .about__head {
-    display: flex; }
+    display: flex;
+    width: 80vw; }
     .about .about__head .name {
-      font-family: "chippewa-falls", sans-serif;
-      font-size: 5em; }
+      font-size: 8em; }
     .about .about__head .role {
-      font-size: 2.5em;
+      font-size: 5em;
       font-weight: lighter;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-left: 0.5em;
       width: 5em; }
+  .about .about__bio {
+    width: 50vw;
+    float: right; }
+    .about .about__bio .about__para {
+      line-height: 1.5em;
+      font-size: 2em;
+      text-align: right; }
 
 .work {
   grid-area: work-section;
-  grid-column: 1 / 12; }
+  grid-column: 1 / 12;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5em; }
+  .work .work__head {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .work .work__head .work__title {
+      font-size: 5em; }
+  .work .card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, minmax(200px, auto)); }
+    .work .card__wrapper .card {
+      padding: 1.5em;
+      margin: 0.75em;
+      position: relative;
+      top: 5em; }
+      .work .card__wrapper .card .card__head .pro__name {
+        font-size: 2.5em; }
+      .work .card__wrapper .card .card__desc .card__para {
+        font-size: 1.2em; }
+    .work .card__wrapper .card__links .card__list {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0; }
+      .work .card__wrapper .card__links .card__list .card__item {
+        padding: 0.75em; }
+        .work .card__wrapper .card__links .card__list .card__item .card__link {
+          color: #33312E; }
+        .work .card__wrapper .card__links .card__list .card__item .git {
+          font-size: 2em; }
+        .work .card__wrapper .card__links .card__list .card__item .site {
+          font-size: 2em; }
+    .work .card__wrapper .pro__one {
+      grid-column: 1 / 4; }
+    .work .card__wrapper .pro__four {
+      grid-column: 2 / 5; }
 
 .resume {
   grid-area: resume-section;

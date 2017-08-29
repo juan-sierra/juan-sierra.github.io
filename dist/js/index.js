@@ -1,0 +1,1 @@
+function permalink(a){for(var n=[".about",".work",".contact"],e=0;e<a.length;e++)a[e].href=n[e]}var a=document.getElementsByClassName("nav__link");permalink(a);

@@ -15,15 +15,15 @@ body
             h1.logo__text JS
 
         nav.nav
-            - var navItems = ["about", "work", "resume", "contact"]
-            each val in navItems
-                ul.nav__wrapper
+            - var navItems = ["about", "work", "contact"]
+            ul.nav__wrapper
+                each val in navItems
                     li.nav__item
-                        a.nav__link(href="#")=val
+                        a.nav__link(href="")=val
 
     section.about
         header.about__head
-            h1.name Juan 
+            h1.name.fancy Juan 
                 span.underline Sierra
             h2.role Front End Developer
 
@@ -33,54 +33,83 @@ body
 
     section.work
         header.work__head
-            h2.work__title Work
+            h2.work__title.fancy Work
 
         section.card__wrapper
             article.card.pro__one
                 header.card__head
-                    h3 Pro 1
+                    h3.pro__name Smartodo
                 div.card__desc
-                    p.card__para Hello
+                    p.card__para Basic web application that uses firebase to store data.
+                div.card__links
+                    ul.card__list
+                        li.card__item
+                            a.card__link(href="https://github.com/juan-sierra/Smartodo") <i class="fa fa-github-alt git" aria-hidden="true"></i>
+
+                        li.card__item
+                            a.card__link(href="http://juansierra.xyz/Smartodo/") <i class="fa fa-globe site" aria-hidden="true"></i>
+
 
             article.card.pro__two
                 header.card__head
-                    h3 Pro 2
+                    h3.pro__name Ecomanyatta
                 div.card__desc
-                    p.card__para Hello
+                    p.card__para Web application form to help people process affordable housing paper work in Africa.
+                div.card__links
+                    ul.card__list
+                        li.card__item
+                            a.card__link(href="https://github.com/juan-sierra/ecomanyatta") <i class="fa fa-github-alt git" aria-hidden="true"></i>
 
             article.card.pro__three
                 header.card__head
-                    h3 Pro 3
+                    h3.pro__name Arcade Game
                 div.card__desc
-                    p.card__para Hello
+                    p.card__para Coming soon...
+                div.card__links
+                    ul.card__list
+                        li.card__item
+                            a.card__link(href="https://github.com/juan-sierra/arcade-game") <i class="fa fa-github-alt git" aria-hidden="true"></i>
 
             article.card.pro__four
                 header.card__head
-                    h3 Pro 4
+                    h3.pro__name Immigration Rights Hub
                 div.card__desc
-                    p.card__para Coming soon...
+                    p.card__para A free comprehensive guide to laws that uniquely affect immigrants.
+                div.card__links
+                    ul.card__list
+                        li.card__item
+                            a.card__link(href="https://github.com/juan-sierra/Smartodo") <i class="fa fa-github-alt git" aria-hidden="true"></i>
+                        li.card__item
+                            a.card__link(href="http://juansierra.xyz/immigrationRightsHub/") <i class="fa fa-globe site" aria-hidden="true"></i>
 
-    section.resume
-        header.resume__head
-            h2 Some Content here
+    //- section.resume
+    //-     header.resume__head
+    //-         h2.resum__title.fancy Resume
+
+    //-     section.resume__content
+    //-         p In the works..
 
 
     section.contact
         header.contact__head
-            h3 Contact me!
+            h3.contact__title.fancy Contact me!
         div.form__wrapper
             form(method="POST")
-                label.label(for="name") Name
-                input.name__input.input(type="text" name="name")
+                div.form__input
+                    //- label.label(for="name") Name
+                    input.name__input.input(type="text" name="name")
 
-                label.label(for="name") Email
-                input.email__input.input(type="email" name="email")
+                div.form__input
+                    //- label.label(for="name") Email
+                    input.email__input.input(type="email" name="email")
 
-                label.label(for="message") Message
-                textarea.text__area
+                div.form__input
+                    //- label.label(for="message") Message
+                    textarea.text__area
 
     section.footer
         footer.footer__wrapper
             div.footer__text.rights Juan Sierra - 2017
 
     script(src="./dist/js/index.js")
+    script(src='https://use.fontawesome.com/dc0663b8e9.js')

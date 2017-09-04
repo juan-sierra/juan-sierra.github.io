@@ -1,0 +1,25 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  // outline: 2px solid blueviolet;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  margin: $reset;
+  padding: $reset;
+  background: $white;
+}
+
+.wrapper {
+  padding: $gt;
+  padding-top: $reset;
+  margin: $reset;
+
+  min-height: 100vh;
+}

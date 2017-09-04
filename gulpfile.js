@@ -7,7 +7,8 @@ var gulp,
     bs,
     bsStream,
     reload,
-    ap;
+    ap,
+    concat;
 
 gulp = require("gulp");
 sass = require("gulp-sass");
@@ -17,10 +18,12 @@ pug = require("gulp-pug");
 rename = require("gulp-rename");
 bs = require("browser-sync").create();
 autoprefixer = require("autoprefixer");
+concat = require("gulp-concat");
 
 gulp.task("sass", function () {
-    return gulp.src("./sass/**.scss")
+    return gulp.src("./sass/imports.scss")
         .pipe(sass())
+        .pipe(concat("style.css"))
         .pipe(gulp.dest("./dist/css"))
         .pipe(bs.reload({
             stream: true

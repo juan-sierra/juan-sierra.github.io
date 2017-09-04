@@ -1,0 +1,41 @@
+#about {
+
+  background-image: linear-gradient(120deg, $green 50%, $grey 50%);
+
+  padding: $gt;
+
+  .about__head {
+
+    .name,
+    .role {
+      color: $black;
+    }
+
+    .name {
+      font-size: $h1-lg;
+      font-family: $fancy-font;
+      margin: $reset;
+    }
+
+    .role {
+      font-size: $h2-md;
+      font-family: $font-stack;
+      font-weight: lighter;
+      margin: $reset;
+    }
+  }
+
+  .about__bio {
+    width: 50vw;
+    position: relative;
+    
+    margin-left: auto;
+    .about__para {
+      font-size: $p-lg;
+      font-family: $font-stack;
+      line-height: $p-height;
+      text-align: right;
+      color: $white;
+    }
+  }
+}

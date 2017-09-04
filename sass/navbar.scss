@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    font-family: $fancy-font;
+    color: $black;
+
+    .logo__text {
+      font-size: $h3-md;
+      display: none;
+    }
+  }
+
+  .nav {
+    font-family: $font-stack;
+
+    .nav__list {
+      padding: $reset;
+      list-style: none;
+
+      .nav__item {
+        padding: $gt / 2;
+
+        text-align: right;
+
+        .nav__link {
+          text-decoration: none;
+          font-size: $a-lg;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+// fancy outline
+
+.nav__link {
+  background-image: linear-gradient(to right, $green 100%, $green 50%);
+  background-repeat: no-repeat;
+  background-size: 0% 0em;
+  background-position: 0 95%;
+  transition: background-size 0.2s ease-in;
+  &:hover {
+    background-image: linear-gradient(to right, $green 100%, $green 50%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 98%;
+    transition: background-size 0.2s ease-in;
+  }
+}
+
+.active {
+  background-image: linear-gradient(to right, $green 100%, $green 50%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 98%;
+}

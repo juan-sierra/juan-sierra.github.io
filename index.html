@@ -7,113 +7,63 @@
   <script src="https://use.typekit.net/ufn3nqv.js"></script>
   <script src="https://use.typekit.net/nvs6qkr.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
-  <section class="main__nav">
-    <header class="logo__head">
-      <h1 class="logo__text">JS</h1>
-    </header>
-    <nav class="nav">
-      <ul class="nav__wrapper">
-        <li class="nav__item"><a class="nav__link" href="">about</a></li>
-        <li class="nav__item"><a class="nav__link" href="">work</a></li>
-        <li class="nav__item"><a class="nav__link" href="">contact</a></li>
-      </ul>
-    </nav>
-  </section>
-  <section class="about">
-    <header class="about__head">
-      <h1 class="name fancy">Juan <span class="underline">Sierra</span></h1>
-      <h2 class="role">Front End Developer</h2>
-    </header>
-    <article class="about__bio">
-      <p class="p about__para">Just an awesome dude who loves tacos, music, and code. I focus on creating minimal and meaninful experiences on the web by keeping accesibility and performance in mind.</p>
-    </article>
-  </section>
-  <section class="work">
-    <header class="work__head">
-      <h2 class="work__title fancy">Work</h2>
-    </header>
-    <section class="card__wrapper">
-      <article class="card pro__one">
-        <header class="card__head">
-          <h3 class="pro__name">Smartodo</h3>
-        </header>
-        <div class="card__desc">
-          <p class="card__para">Basic web application that uses firebase to store data.</p>
-        </div>
-        <div class="card__links">
-          <ul class="card__list">
-            <li class="card__item"><a class="card__link" href="https://github.com/juan-sierra/Smartodo"><i class="fa fa-github-alt git" aria-hidden="true"></i></a></li>
-            <li class="card__item"><a class="card__link" href="http://juansierra.xyz/Smartodo/"><i class="fa fa-globe site" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </article>
-      <article class="card pro__two">
-        <header class="card__head">
-          <h3 class="pro__name">Ecomanyatta</h3>
-        </header>
-        <div class="card__desc">
-          <p class="card__para">Web application form to help people process affordable housing paper work in Africa.</p>
-        </div>
-        <div class="card__links">
-          <ul class="card__list">
-            <li class="card__item"><a class="card__link" href="https://github.com/juan-sierra/ecomanyatta"><i class="fa fa-github-alt git" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </article>
-      <article class="card pro__three">
-        <header class="card__head">
-          <h3 class="pro__name">Arcade Game</h3>
-        </header>
-        <div class="card__desc">
-          <p class="card__para">Coming soon...</p>
-        </div>
-        <div class="card__links">
-          <ul class="card__list">
-            <li class="card__item"><a class="card__link" href="https://github.com/juan-sierra/arcade-game"><i class="fa fa-github-alt git" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </article>
-      <article class="card pro__four">
-        <header class="card__head">
-          <h3 class="pro__name">Immigration Rights Hub</h3>
-        </header>
-        <div class="card__desc">
-          <p class="card__para">A free comprehensive guide to laws that uniquely affect immigrants.</p>
-        </div>
-        <div class="card__links">
-          <ul class="card__list">
-            <li class="card__item"><a class="card__link" href="https://github.com/juan-sierra/Smartodo"><i class="fa fa-github-alt git" aria-hidden="true"></i></a></li>
-            <li class="card__item"><a class="card__link" href="http://juansierra.xyz/immigrationRightsHub/"><i class="fa fa-globe site" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
+  <main class="wrapper">
+    <section class="navbar">
+      <div class="logo">
+        <h3 class="logo__text">JS</h3>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
+          <li class="nav__item"><a class="nav__link" href="#work">work</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="about">
+      <header class="about__head">
+        <h1 class="name">Juan Sierra</h1>
+        <h2 class="role">Front End Developer</h2>
+      </header>
+      <article class="about__bio">
+        <p class="about__para">An awesome dude who loves code, tacos, and music. I focus on creating minimal and meaningful experiences by keeping performance in mind.</p>
       </article>
     </section>
-  </section>
-  <section class="contact">
-    <header class="contact__head">
-      <h3 class="contact__title fancy">Contact me!</h3>
-    </header>
-    <div class="form__wrapper">
-      <form method="POST">
-        <div class="form__input">
-          <input class="name__input input" type="text" name="name"/>
-        </div>
-        <div class="form__input">
-          <input class="email__input input" type="email" name="email"/>
-        </div>
-        <div class="form__input">
-          <textarea class="text__area"></textarea>
-        </div>
-      </form>
-    </div>
-  </section>
-  <section class="footer">
-    <footer class="footer__wrapper">
-      <div class="footer__text rights">Juan Sierra - 2017</div>
-    </footer>
-  </section>
+    <section id="work">
+      <header class="work__head">
+        <h2 class="work__title">Work</h2>
+      </header>
+      <hr class="divider"/>
+      <div class="card__wrapper">
+        <article class="card">
+          <head class="card__head">
+            <h3 class="card__name">Pro 1</h3>
+          </head>
+          <div class="card__description"></div>
+        </article>
+        <article class="card">
+          <head class="card__head">
+            <h3 class="card__name">Pro 1</h3>
+          </head>
+          <div class="card__description"></div>
+        </article>
+        <article class="card">
+          <head class="card__head">
+            <h3 class="card__name">Pro 1</h3>
+          </head>
+          <div class="card__description"></div>
+        </article>
+        <article class="card">
+          <head class="card__head">
+            <h3 class="card__name">Pro 1</h3>
+          </head>
+          <div class="card__description"></div>
+        </article>
+      </div>
+    </section>
+  </main>
   <script src="./dist/js/index.js"></script>
-  <script src="https://use.fontawesome.com/dc0663b8e9.js"></script>
 </body>

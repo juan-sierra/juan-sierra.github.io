@@ -1,6 +1,6 @@
 #work {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
   grid-gap: $gt;
   height: 100vh;
 
@@ -14,30 +14,35 @@
     .work__title {
       font-size: $h2-lg;
       font-weight: lighter;
+      color: $black;
     }
   }
 
-  .divider {
-    top: 2em;
-    height: 50vh;
-    padding: $reset;
-    margin: auto;
-    border-style: none;
-    border: 0.06em solid $black;
-  }
-
   .card__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    position: relative;
+    margin-top: $gt;
+
+    .card {
+      padding: $gt;
+      margin: $gt / 2;
+      .card__head {
+        .card__name {
+          font-size: $h3-md;
+          margin: $reset;
+        }
+      }
+    }
 
     .card:nth-child(odd) {
       background: $blue;
+      color: $off-white;
     }
 
     .card:nth-child(even) {
       background: $grey;
+      color: $black;
     }
   }
 }

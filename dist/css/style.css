@@ -870,7 +870,7 @@ body {
 
 #work {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
   grid-gap: 1.5em;
   height: 100vh;
   font-family: Interface, sans-serif; }
@@ -880,20 +880,22 @@ body {
     align-items: center; }
     #work .work__head .work__title {
       font-size: 5.5em;
-      font-weight: lighter; }
-  #work .divider {
-    top: 2em;
-    height: 50vh;
-    padding: 0;
-    margin: auto;
-    border-style: none;
-    border: 0.06em solid #373f51; }
+      font-weight: lighter;
+      color: #373f51; }
   #work .card__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    position: relative;
+    margin-top: 1.5em; }
+    #work .card__wrapper .card {
+      padding: 1.5em;
+      margin: 0.75em; }
+      #work .card__wrapper .card .card__head .card__name {
+        font-size: 3.5em;
+        margin: 0; }
     #work .card__wrapper .card:nth-child(odd) {
-      background: #59A5D8; }
+      background: #59A5D8;
+      color: #f0f2ef; }
     #work .card__wrapper .card:nth-child(even) {
-      background: #acb0bd; }
+      background: #acb0bd;
+      color: #373f51; }

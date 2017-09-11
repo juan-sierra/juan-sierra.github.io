@@ -870,7 +870,7 @@ body {
 
 #work {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5em;
   height: 100vh;
   font-family: Interface, sans-serif; }
@@ -899,3 +899,45 @@ body {
     #work .card__wrapper .card:nth-child(even) {
       background: #acb0bd;
       color: #373f51; }
+
+#contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #contact .form {
+    display: flex;
+    flex-direction: column; }
+    #contact .form .contact__title {
+      font-family: "chippewa-falls", sans-serif;
+      font-size: 4.5em;
+      text-align: center; }
+    #contact .form .input,
+    #contact .form .button {
+      padding: 1.5em 0 0.75em;
+      margin: 1.5em;
+      width: 60vw;
+      outline: none;
+      border: none;
+      resize: none; }
+      #contact .form .input:not(.button),
+      #contact .form .button:not(.button) {
+        border-bottom: 2px solid #59A5D8;
+        background-color: #f4f2f3; }
+      #contact .form .input::placeholder,
+      #contact .form .button::placeholder {
+        font-size: 1.2em;
+        color: #373f51;
+        transition: transform 0.5s; }
+    #contact .form .input:focus::placeholder {
+      transform: translatey(-1.2em);
+      transition: transform 0.5s; }
+    #contact .form .button {
+      font-size: 1.5em;
+      font-family: Interface, sans-serif;
+      font-weight: bolder;
+      background: #84dcc6;
+      color: #f4f2f3;
+      padding: 1.5em;
+      margin: auto;
+      width: 50%; }

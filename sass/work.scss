@@ -1,6 +1,6 @@
 #work {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: $gt;
   height: 100vh;
 
@@ -21,6 +21,7 @@
   .card__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    // grid-template-rows: repeat(auto-fill, minmax(500px, auto));
     position: relative;
     margin-top: $gt;
 

@@ -51,11 +51,6 @@ body
                     header.card__head
                         h3.card__name Pro 1
                     div.card__description
-                    
-                article.card
-                    header.card__head
-                        h3.card__name Pro 1
-                    div.card__description
 
                 article.card
                     header.card__head
@@ -66,6 +61,30 @@ body
                     header.card__head
                         h3.card__name Pro 1
                     div.card__description
+
+                article.card
+                    header.card__head
+                        h3.card__name Pro 1
+                    div.card__description
+
+    section#contact
+
+        form(method='POST', action='http://formspree.io/jasierra.garcia@gmail.com').form
+
+            h2.contact__title Contact me!
+
+            input(type="name", name="name", placeholder="Name" required).input.name
+
+            input(type="email", name="email", placeholder="Email" required).input.email
+
+            textarea(name="message", placeholder="Message" rows="1" required).input.message
+
+            button(type='submit').button.send Send
+
+
+    footer.footer
+        div.footer__content
+            p.credit Juan Sierra - 2017
 
 
 

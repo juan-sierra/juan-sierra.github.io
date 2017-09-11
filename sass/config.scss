@@ -2,7 +2,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  // outline: 2px solid blueviolet;
+  // outline: 2px solid blueviolet !important;
 }
 
 html,
@@ -20,6 +20,5 @@ body {
   padding: $gt;
   padding-top: $reset;
   margin: $reset;
-
   min-height: 100vh;
 }

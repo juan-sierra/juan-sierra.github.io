@@ -799,7 +799,7 @@ body {
   padding: 1.5em;
   padding-top: 0;
   margin: 0;
-  min-height: 100vh; }
+  min-height: 100%; }
 
 .navbar {
   display: flex;
@@ -823,28 +823,28 @@ body {
           font-size: 1.5em;
           color: #373f51; }
 
-.nav__link {
-  background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
-  background-repeat: no-repeat;
-  background-size: 0% 0em;
-  background-position: 0 95%;
-  transition: background-size 0.2s ease-in; }
-  .nav__link:hover {
+.navbar {
+  min-height: 20%; }
+  .navbar .nav__link {
+    background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
+    background-repeat: no-repeat;
+    background-size: 0% 0em;
+    background-position: 0 95%;
+    transition: background-size 0.2s ease-in; }
+    .navbar .nav__link:hover {
+      background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.3em;
+      background-position: 0 98%;
+      transition: background-size 0.2s ease-in; }
+  .navbar .active {
     background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
     background-repeat: no-repeat;
     background-size: 100% 0.3em;
-    background-position: 0 98%;
-    transition: background-size 0.2s ease-in; }
-
-.active {
-  background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.3em;
-  background-position: 0 98%; }
+    background-position: 0 98%; }
 
 #about {
-  background-image: linear-gradient(120deg, #84dcc6 50%, #acb0bd 50%);
-  padding: 1.5em; }
+  min-height: 80%; }
   #about .about__head .name,
   #about .about__head .role {
     color: #373f51; }
@@ -857,16 +857,18 @@ body {
     font-family: Interface, sans-serif;
     font-weight: lighter;
     margin: 0; }
+  #about .about__head .outline {
+    background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 100%; }
   #about .about__bio {
-    width: 50vw;
-    position: relative;
-    margin-left: auto; }
+    width: 50vw; }
     #about .about__bio .about__para {
       font-size: 2.5em;
       font-family: Interface, sans-serif;
       line-height: 1.5em;
-      text-align: right;
-      color: #f4f2f3; }
+      text-align: left; }
 
 #work {
   display: grid;
@@ -933,11 +935,14 @@ body {
       transform: translatey(-1.2em);
       transition: transform 0.5s; }
     #contact .form .button {
-      font-size: 1.5em;
+      padding: 0;
+      width: 9em;
+      height: 2.5em;
+      margin-left: auto;
+      cursor: pointer;
       font-family: Interface, sans-serif;
-      font-weight: bolder;
+      font-size: 1.2em;
       background: #84dcc6;
-      color: #f4f2f3;
-      padding: 1.5em;
-      margin: auto;
-      width: 50%; }
+      color: #373f51;
+      font-weight: bolder;
+      box-shadow: 5px 5px 5px #373f51; }

@@ -1,11 +1,10 @@
 #about {
+  // background-image: linear-gradient(120deg, $green 50%, $grey 50%);
 
-  background-image: linear-gradient(120deg, $green 50%, $grey 50%);
-
-  padding: $gt;
+  // padding: $gt;
+  min-height: 80%;
 
   .about__head {
-
     .name,
     .role {
       color: $black;
@@ -23,19 +22,22 @@
       font-weight: lighter;
       margin: $reset;
     }
+    .outline {
+      background-image: linear-gradient(to right, $green 100%, $green 50%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.3em;
+      background-position: 0 100%;
+    }
   }
 
   .about__bio {
     width: 50vw;
-    position: relative;
-    
-    margin-left: auto;
+
     .about__para {
       font-size: $p-lg;
       font-family: $font-stack;
       line-height: $p-height;
-      text-align: right;
-      color: $white;
+      text-align: left;
     }
   }
 }

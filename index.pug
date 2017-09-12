@@ -34,7 +34,8 @@ body
         section#about
             header.about__head
                 h1.name Juan Sierra
-                h2.role Front End Developer
+                h2.role Front End 
+                    span.outline Developer
 
             article.about__bio
                 - var para = "An awesome dude who loves code, tacos, and music. I focus on creating minimal and meaningful experiences by keeping performance in mind."
@@ -73,9 +74,9 @@ body
 
             h2.contact__title Contact me!
 
-            input(type="name", name="name", placeholder="Name" required).input.name
+            input(type="name", name="name", placeholder="Name" required autocomplete).input.name
 
-            input(type="email", name="email", placeholder="Email" required).input.email
+            input(type="email", name="email", placeholder="Email" required autocomplete).input.email
 
             textarea(name="message", placeholder="Message" rows="1" required).input.message
 

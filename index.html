@@ -26,7 +26,7 @@
     <section id="about">
       <header class="about__head">
         <h1 class="name">Juan Sierra</h1>
-        <h2 class="role">Front End Developer</h2>
+        <h2 class="role">Front End <span class="outline">Developer</span></h2>
       </header>
       <article class="about__bio">
         <p class="about__para">An awesome dude who loves code, tacos, and music. I focus on creating minimal and meaningful experiences by keeping performance in mind.</p>
@@ -67,8 +67,8 @@
   <section id="contact">
     <form class="form" method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
       <h2 class="contact__title">Contact me!</h2>
-      <input class="input name" type="name" name="name" placeholder="Name" required="required"/>
-      <input class="input email" type="email" name="email" placeholder="Email" required="required"/>
+      <input class="input name" type="name" name="name" placeholder="Name" required="required" autocomplete="autocomplete"/>
+      <input class="input email" type="email" name="email" placeholder="Email" required="required" autocomplete="autocomplete"/>
       <textarea class="input message" name="message" placeholder="Message" rows="1" required="required"></textarea>
       <button class="button send" type="submit">Send</button>
     </form>

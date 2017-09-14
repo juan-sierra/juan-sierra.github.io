@@ -37,19 +37,23 @@
 // fancy outline
 
 .navbar {
-  min-height: 20%;
+  // min-height: 20%;
+  position: fixed;
+  top: 0;
+  right: $gt;
+  z-index: 1;
   .nav__link {
     background-image: linear-gradient(to right, $green 100%, $green 50%);
     background-repeat: no-repeat;
     background-size: 0% 0em;
     background-position: 0 95%;
-    transition: background-size 0.2s ease-in;
+    transition: background-size 0.3s ease-out;
     &:hover {
       background-image: linear-gradient(to right, $green 100%, $green 50%);
       background-repeat: no-repeat;
       background-size: 100% 0.3em;
       background-position: 0 98%;
-      transition: background-size 0.2s ease-in;
+      transition: background-size 0.3s ease-out;
     }
   }
 

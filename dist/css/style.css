@@ -801,6 +801,9 @@ body {
   margin: 0;
   min-height: 100%; }
 
+section {
+  padding: 1.5em; }
+
 .navbar {
   display: flex;
   justify-content: space-between; }
@@ -824,19 +827,22 @@ body {
           color: #373f51; }
 
 .navbar {
-  min-height: 20%; }
+  position: fixed;
+  top: 0;
+  right: 1.5em;
+  z-index: 1; }
   .navbar .nav__link {
     background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
     background-repeat: no-repeat;
     background-size: 0% 0em;
     background-position: 0 95%;
-    transition: background-size 0.2s ease-in; }
+    transition: background-size 0.3s ease-out; }
     .navbar .nav__link:hover {
       background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
       background-repeat: no-repeat;
       background-size: 100% 0.3em;
       background-position: 0 98%;
-      transition: background-size 0.2s ease-in; }
+      transition: background-size 0.3s ease-out; }
   .navbar .active {
     background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
     background-repeat: no-repeat;
@@ -844,7 +850,8 @@ body {
     background-position: 0 98%; }
 
 #about {
-  min-height: 80%; }
+  min-height: 100%;
+  margin-top: 7.5em; }
   #about .about__head .name,
   #about .about__head .role {
     color: #373f51; }
@@ -863,7 +870,7 @@ body {
     background-size: 100% 0.3em;
     background-position: 0 100%; }
   #about .about__bio {
-    width: 50vw; }
+    width: 70vw; }
     #about .about__bio .about__para {
       font-size: 2.5em;
       font-family: Interface, sans-serif;
@@ -946,3 +953,12 @@ body {
       color: #373f51;
       font-weight: bolder;
       box-shadow: 5px 5px 5px #373f51; }
+
+.footer {
+  background: #84dcc6;
+  padding: 1.5em;
+  height: 10%; }
+  .footer .footer__content .credit {
+    color: #373f51;
+    font-size: 1.2em;
+    font-family: Interface, sans-serif; }

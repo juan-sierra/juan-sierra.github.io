@@ -799,50 +799,41 @@ body {
   padding: 1.5em;
   padding-top: 0;
   margin: 0;
-  min-height: 100%; }
-
-section {
-  padding: 1.5em; }
-
-.navbar {
-  display: flex;
-  justify-content: space-between; }
-  .navbar .logo {
-    font-family: "chippewa-falls", sans-serif;
-    color: #373f51; }
-    .navbar .logo .logo__text {
-      font-size: 3.5em;
-      display: none; }
-  .navbar .nav {
-    font-family: Interface, sans-serif; }
-    .navbar .nav .nav__list {
-      padding: 0;
-      list-style: none; }
-      .navbar .nav .nav__list .nav__item {
-        padding: 0.75em;
-        text-align: right; }
-        .navbar .nav .nav__list .nav__item .nav__link {
-          text-decoration: none;
-          font-size: 1.5em;
-          color: #373f51; }
+  min-height: 100%;
+  max-width: 1200px;
+  margin: auto; }
 
 .navbar {
   position: fixed;
-  top: 0;
-  right: 1.5em;
-  z-index: 1; }
-  .navbar .nav__link {
-    background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
-    background-repeat: no-repeat;
-    background-size: 0% 0em;
-    background-position: 0 95%;
-    transition: background-size 0.3s ease-out; }
-    .navbar .nav__link:hover {
-      background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
-      background-repeat: no-repeat;
-      background-size: 100% 0.3em;
-      background-position: 0 98%;
-      transition: background-size 0.3s ease-out; }
+  padding: 0.75em;
+  top: 0.75em;
+  margin: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  font-family: Interface, sans-serif;
+  font-size: 1.5em; }
+  .navbar .nav .nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .navbar .nav .nav__list .nav__item {
+      padding: 0.5em;
+      text-align: left; }
+      .navbar .nav .nav__list .nav__item .nav__link {
+        color: #373f51;
+        text-decoration: none;
+        background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
+        background-repeat: no-repeat;
+        background-size: 0% 0em;
+        background-position: 0 95%;
+        transition: background-size 0.3s ease-out; }
+        .navbar .nav .nav__list .nav__item .nav__link:hover {
+          background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
+          background-repeat: no-repeat;
+          background-size: 100% 0.3em;
+          background-position: 0 98%;
+          transition: background-size 0.3s ease-out; }
   .navbar .active {
     background-image: linear-gradient(to right, #84dcc6 100%, #84dcc6 50%);
     background-repeat: no-repeat;
@@ -851,16 +842,18 @@ section {
 
 #about {
   min-height: 100%;
-  margin-top: 7.5em; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   #about .about__head .name,
   #about .about__head .role {
     color: #373f51; }
   #about .about__head .name {
-    font-size: 8em;
+    font-size: calc(5vw + 5vh + 2vmin);
     font-family: "chippewa-falls", sans-serif;
     margin: 0; }
   #about .about__head .role {
-    font-size: 4.5em;
+    font-size: calc(2vw + 2vh + 2vmin);
     font-family: Interface, sans-serif;
     font-weight: lighter;
     margin: 0; }
@@ -869,19 +862,19 @@ section {
     background-repeat: no-repeat;
     background-size: 100% 0.3em;
     background-position: 0 100%; }
-  #about .about__bio {
-    width: 70vw; }
-    #about .about__bio .about__para {
-      font-size: 2.5em;
-      font-family: Interface, sans-serif;
-      line-height: 1.5em;
-      text-align: left; }
+  #about .about__bio .about__para {
+    font-size: calc(1vw + 1vh + 1.5vmin);
+    font-family: Interface, sans-serif;
+    line-height: 1.5em;
+    text-align: left;
+    color: #373f51; }
 
 #work {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5em;
   height: 100vh;
+  margin: auto;
   font-family: Interface, sans-serif; }
   #work .work__head {
     display: flex;
@@ -892,8 +885,6 @@ section {
       font-weight: lighter;
       color: #373f51; }
   #work .card__wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     position: relative;
     margin-top: 1.5em; }
     #work .card__wrapper .card {
@@ -903,14 +894,14 @@ section {
         font-size: 3.5em;
         margin: 0; }
     #work .card__wrapper .card:nth-child(odd) {
-      background: #59A5D8;
-      color: #f0f2ef; }
-    #work .card__wrapper .card:nth-child(even) {
-      background: #acb0bd;
+      background: #84dcc6;
       color: #373f51; }
+    #work .card__wrapper .card:nth-child(even) {
+      background: #59A5D8;
+      color: #f4f2f3; }
 
 #contact {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -955,10 +946,25 @@ section {
       box-shadow: 5px 5px 5px #373f51; }
 
 .footer {
-  background: #84dcc6;
+  background: #373f51;
   padding: 1.5em;
-  height: 10%; }
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .footer .footer__content .credit {
-    color: #373f51;
+    color: #f4f2f3;
     font-size: 1.2em;
     font-family: Interface, sans-serif; }
+  .footer .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; }
+    .footer .social .social__item {
+      margin: 0.75em;
+      padding: 0.75em; }
+      .footer .social .social__item .social__link {
+        color: #f4f2f3;
+        font-size: 1.5em; }

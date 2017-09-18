@@ -9,27 +9,24 @@ head
     script(src='https://use.typekit.net/nvs6qkr.js')
     script.
         try{Typekit.load({ async: true });}catch(e){}
-    script(src='https://unpkg.com/feather-icons/dist/feather.min.js')
 
 body
+    div.hamburger
+        span.line
+        span.line
+        span.line
+    aside.navbar
+        nav.nav
+            ul.nav__list
+                li.nav__item
+                    a(href="#about").nav__link about
 
+                li.nav__item
+                    a(href="#work").nav__link work
+
+                li.nav__item
+                    a(href="#contact").nav__link contact
     main.wrapper
-
-        section.navbar
-
-            div.logo
-                h3.logo__text JS
-
-            nav.nav
-                ul.nav__list
-                    li.nav__item
-                        a(href="#about").nav__link about
-
-                    li.nav__item
-                        a(href="#work").nav__link work
-
-                    li.nav__item
-                        a(href="#contact").nav__link contact
 
         section#about
             header.about__head
@@ -87,6 +84,25 @@ body
         div.footer__content
             p.credit Juan Sierra - 2017
 
+        ul.social
+            li.social__item.github
+                a(href="#").social__link.github
+                    i.fa.fa-github(aria-hidden='true')
+
+            li.social__item
+                a(href="#").social__link.codepen
+                    i.fa.fa-codepen(aria-hidden='true')
+
+
+            li.social__item
+                a(href="#").social__link.linkedin
+                    i.fa.fa-linkedin(aria-hidden='true')
+
+            li.social__item
+                a(href="#").social__link.instagram
+                    i.fa.fa-instagram(aria-hidden='true')
+
 
 
     script(src="./dist/js/index.js")
+    script(src='https://use.fontawesome.com/ce5ab495ae.js')

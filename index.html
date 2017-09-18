@@ -6,23 +6,23 @@
   <link rel="stylesheet" href="./dist/css/style.css"/>
   <script src="https://use.typekit.net/ufn3nqv.js"></script>
   <script src="https://use.typekit.net/nvs6qkr.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    try{Typekit.load({ async: true });}catch(e){}
+    
+  </script>
 </head>
 <body>
+  <div class="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+  <aside class="navbar">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
+        <li class="nav__item"><a class="nav__link" href="#work">work</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </aside>
   <main class="wrapper">
-    <section class="navbar">
-      <div class="logo">
-        <h3 class="logo__text">JS</h3>
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
-          <li class="nav__item"><a class="nav__link" href="#work">work</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
-        </ul>
-      </nav>
-    </section>
     <section id="about">
       <header class="about__head">
         <h1 class="name">Juan Sierra</h1>
@@ -77,6 +77,13 @@
     <div class="footer__content">
       <p class="credit">Juan Sierra - 2017</p>
     </div>
+    <ul class="social">
+      <li class="social__item github"><a class="social__link github" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li class="social__item"><a class="social__link codepen" href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+      <li class="social__item"><a class="social__link linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li class="social__item"><a class="social__link instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
   </footer>
   <script src="./dist/js/index.js"></script>
+  <script src="https://use.fontawesome.com/ce5ab495ae.js"></script>
 </body>

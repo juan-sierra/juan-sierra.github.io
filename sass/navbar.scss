@@ -1,59 +1,42 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-
-  .logo {
-    font-family: $fancy-font;
-    color: $black;
-
-    .logo__text {
-      font-size: $h3-md;
-      display: none;
-    }
-  }
-
+  position: fixed;
+  padding: $gt / 2;
+  top: $gt / 2;
+  margin: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  font-family: $font-stack;
+  font-size: $a-lg;
   .nav {
-    font-family: $font-stack;
-
     .nav__list {
-      padding: $reset;
       list-style: none;
-
+      padding: 0;
+      margin: 0;
       .nav__item {
-        padding: $gt / 2;
-
-        text-align: right;
-
+        padding: $gt / 3;
+        text-align: left;
         .nav__link {
-          text-decoration: none;
-          font-size: $a-lg;
           color: $black;
+          text-decoration: none;
+          background-image: linear-gradient(to right, $green 100%, $green 50%);
+          background-repeat: no-repeat;
+          background-size: 0% 0em;
+          background-position: 0 95%;
+          transition: background-size 0.3s ease-out;
+          &:hover {
+            background-image: linear-gradient(
+              to right,
+              $green 100%,
+              $green 50%
+            );
+            background-repeat: no-repeat;
+            background-size: 100% 0.3em;
+            background-position: 0 98%;
+            transition: background-size 0.3s ease-out;
+          }
         }
       }
-    }
-  }
-}
-
-// fancy outline
-
-.navbar {
-  // min-height: 20%;
-  position: fixed;
-  top: 0;
-  right: $gt;
-  z-index: 1;
-  .nav__link {
-    background-image: linear-gradient(to right, $green 100%, $green 50%);
-    background-repeat: no-repeat;
-    background-size: 0% 0em;
-    background-position: 0 95%;
-    transition: background-size 0.3s ease-out;
-    &:hover {
-      background-image: linear-gradient(to right, $green 100%, $green 50%);
-      background-repeat: no-repeat;
-      background-size: 100% 0.3em;
-      background-position: 0 98%;
-      transition: background-size 0.3s ease-out;
     }
   }
 
@@ -64,3 +47,23 @@
     background-position: 0 98%;
   }
 }
+
+// work on making it responsive.
+
+// @media (max-width: 1400px) {
+//   .navbar {
+//     transform: translateX($gt * 5);
+//     .hamburger {
+//       cursor: pointer;
+//       padding: 0;
+//       margin-left: auto;
+//       .line {
+//         border: 2px solid $black;
+//         width: 2em;
+//         display: flex;
+//         padding: 0;
+//         margin: $gt / 4;
+//       }
+//     }
+//   }
+// }

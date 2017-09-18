@@ -1,9 +1,10 @@
 #about {
   // background-image: linear-gradient(120deg, $green 50%, $grey 50%);
 
-  // padding: $gt;
   min-height: 100%;
-  margin-top: $gt * 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .about__head {
     .name,
@@ -12,13 +13,13 @@
     }
 
     .name {
-      font-size: $h1-lg;
+      font-size: calc(5vw + 5vh + 2vmin);
       font-family: $fancy-font;
       margin: $reset;
     }
 
     .role {
-      font-size: $h2-md;
+      font-size: calc(2vw + 2vh + 2vmin);
       font-family: $font-stack;
       font-weight: lighter;
       margin: $reset;
@@ -32,13 +33,13 @@
   }
 
   .about__bio {
-    width: 70vw;
-
+    // width: 100vmin;
     .about__para {
-      font-size: $p-lg;
+      font-size: calc(1vw + 1vh + 1.5vmin);
       font-family: $font-stack;
       line-height: $p-height;
       text-align: left;
+      color: $black;
     }
   }
 }

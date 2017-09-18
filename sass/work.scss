@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: $gt;
   height: 100vh;
+  margin: auto;
 
   font-family: $font-stack;
 
@@ -19,8 +20,8 @@
   }
 
   .card__wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(50vmin, 1fr));
     // grid-template-rows: repeat(auto-fill, minmax(500px, auto));
     position: relative;
     margin-top: $gt;
@@ -37,13 +38,13 @@
     }
 
     .card:nth-child(odd) {
-      background: $blue;
-      color: $off-white;
+      background: $green;
+      color: $black;
     }
 
     .card:nth-child(even) {
-      background: $grey;
-      color: $black;
+      background: $blue;
+      color: $white;
     }
   }
 }

@@ -21,8 +21,6 @@ body {
   padding-top: $reset;
   margin: $reset;
   min-height: 100%;
-}
-
-section {
-  padding: $gt;
+  max-width: 1200px;
+  margin: auto;
 }

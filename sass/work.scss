@@ -1,50 +1,24 @@
 #work {
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: $gt;
-  height: 100vh;
-  margin: auto;
-
-  font-family: $font-stack;
-
   .work__head {
     display: flex;
-    justify-content: center;
     align-items: center;
-
     .work__title {
+      padding: 0;
+      margin: 0;
       font-size: $h2-lg;
-      font-weight: lighter;
+      font-family: $fancy-font;
       color: $black;
+      font-weight: lighter;
     }
   }
 
-  .card__wrapper {
-    // display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(50vmin, 1fr));
-    // grid-template-rows: repeat(auto-fill, minmax(500px, auto));
-    position: relative;
-    margin-top: $gt;
-
-    .card {
-      padding: $gt;
-      margin: $gt / 2;
-      .card__head {
-        .card__name {
-          font-size: $h3-md;
-          margin: $reset;
-        }
-      }
-    }
-
-    .card:nth-child(odd) {
-      background: $green;
-      color: $black;
-    }
-
-    .card:nth-child(even) {
-      background: $blue;
-      color: $white;
-    }
+  .projects__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: $gt;
+    align-items: center;
   }
 }

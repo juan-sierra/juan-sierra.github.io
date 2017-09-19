@@ -13,19 +13,19 @@
 </head>
 <body>
   <main class="wrapper">
-    <aside class="navbar">
+    <aside class="sidebar">
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
-          <li class="nav__item"><a class="nav__link" href="#work">work</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
+          <li class="nav__item"> <a class="nav__link" href="about">about</a></li>
+          <li class="nav__item"> <a class="nav__link" href="work">work</a></li>
+          <li class="nav__item"> <a class="nav__link" href="contact">contact</a></li>
         </ul>
       </nav>
     </aside>
     <section id="about">
       <header class="about__head">
         <h1 class="name">Juan Sierra</h1>
-        <h2 class="role">Front End <span class="outline">Developer</span></h2>
+        <h2 class="role">Front End <span class="underline">Developer</span></h2>
       </header>
       <article class="about__bio">
         <p class="about__para">An awesome dude who loves code, tacos, and music. I focus on finding solutions to mundane tasks and creating minimal yet meaningful experiences on the web.</p>
@@ -35,54 +35,19 @@
       <header class="work__head">
         <h2 class="work__title">Work</h2>
       </header>
-      <div class="card__wrapper">
+      <div class="projects__wrapper">
         <article class="card">
-          <header class="card__head">
-            <h3 class="card__name">Pro 1</h3>
-          </header>
-          <div class="card__description"></div>
+          <h3 class="project__name">Immigration Rights Hub</h3>
         </article>
         <article class="card">
-          <header class="card__head">
-            <h3 class="card__name">Pro 1</h3>
-          </header>
-          <div class="card__description"></div>
+          <h3 class="project__name">Econmanyatta</h3>
         </article>
         <article class="card">
-          <header class="card__head">
-            <h3 class="card__name">Pro 1</h3>
-          </header>
-          <div class="card__description"></div>
-        </article>
-        <article class="card">
-          <header class="card__head">
-            <h3 class="card__name">Pro 1</h3>
-          </header>
-          <div class="card__description"></div>
+          <h3 class="project__name">Smartodo</h3>
         </article>
       </div>
     </section>
   </main>
-  <section id="contact">
-    <form class="form" method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
-      <h2 class="contact__title">Contact me!</h2>
-      <input class="input name" type="name" name="name" placeholder="Name" required="required" autocomplete="autocomplete"/>
-      <input class="input email" type="email" name="email" placeholder="Email" required="required" autocomplete="autocomplete"/>
-      <textarea class="input message" name="message" placeholder="Message" rows="1" required="required"></textarea>
-      <button class="button send" type="submit">Send</button>
-    </form>
-  </section>
-  <footer class="footer">
-    <div class="footer__content">
-      <p class="credit">Juan Sierra - 2017</p>
-    </div>
-    <ul class="social">
-      <li class="social__item github"><a class="social__link github" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-      <li class="social__item"><a class="social__link codepen" href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-      <li class="social__item"><a class="social__link linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-      <li class="social__item"><a class="social__link instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-    </ul>
-  </footer>
   <script src="./dist/js/index.js"></script>
   <script src="https://use.fontawesome.com/ce5ab495ae.js"></script>
 </body>

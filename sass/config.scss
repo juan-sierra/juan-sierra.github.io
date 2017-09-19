@@ -10,24 +10,13 @@ body {
   height: 100vh;
 }
 
-body {
-  margin: $reset;
-  padding: $reset;
-  background: $white;
-}
-
 .wrapper {
+  min-height: 100%;
+  max-width: 1200px;
+  padding: $gt;
+  margin: auto;
+
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: $gt;
-  padding: $gt;
-  padding-top: $reset;
-  margin: $reset;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-section {
-  height: 100%;
 }

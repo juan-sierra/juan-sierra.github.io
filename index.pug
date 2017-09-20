@@ -13,17 +13,22 @@ head
 body
     main.wrapper
 
+        div.hamburger__menu
+            span.line
+            span.line
+            span.line
+
         aside.sidebar
             nav.nav
                 ul.nav__list
                     li.nav__item 
-                        a(href="about").nav__link about
+                        a(href="#about").nav__link about
 
                     li.nav__item 
-                        a(href="work").nav__link work
+                        a(href="#work").nav__link work
 
                     li.nav__item 
-                        a(href="contact").nav__link contact
+                        a(href="#contact").nav__link contact
         section#about
             header.about__head
                 h1.name Juan Sierra
@@ -31,7 +36,7 @@ body
                     span.underline Developer
 
             article.about__bio
-                - var para = "An awesome dude who loves code, tacos, and music. I focus on finding solutions to mundane tasks and creating minimal yet meaningful experiences on the web."
+                - var para = "An awesome dude who loves to code, tacos, and music. I focus on finding solutions to mundane tasks and creating minimal yet meaningful experiences on the web."
                 p.about__para=para
 
         section#work
@@ -44,6 +49,20 @@ body
                     h3.project__name Econmanyatta
                 article.card
                     h3.project__name Smartodo
+
+        section#contact
+
+            form(method='POST', action='http://formspree.io/jasierra.garcia@gmail.com').form
+
+                h2.contact__title Contact me!
+
+                input(type="name", name="name", placeholder="Name" required autocomplete).input.name
+
+                input(type="email", name="email", placeholder="Email" required autocomplete).input.email
+
+                textarea(name="message", placeholder="Message" rows="1" required).input.message
+
+                button(type='submit').button.send Send
 
 
 

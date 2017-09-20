@@ -1,5 +1,5 @@
 #work {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   .work__head {
@@ -16,9 +16,33 @@
   }
 
   .projects__wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $font-stack;
+    color: $black;
+    margin-top: $gt;
+
+    .card {
+      flex: 0 0 50%;
+      padding: $gt;
+      margin: $gt;
+      .project__name {
+        font-size: $h3-lg / 2;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #work {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: $gt;
-    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    .projects__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 }

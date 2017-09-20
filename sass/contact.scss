@@ -1,1 +1,53 @@
+#contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
+    .contact__title {
+      font-family: $fancy-font;
+      font-size: $h2-md;
+      margin: auto;
+      color: $black;
+    }
+    .input,
+    .button {
+      padding: $gt 0 $gt / 2;
+      margin: $gt;
+      width: calc(50vw + 10vh + 2vmin);
+      outline: none;
+      border: none;
+      resize: none;
+      &:not(.button) {
+        border-bottom: 2px solid $blue;
+      }
+      &::placeholder {
+        font-size: 1.2em;
+        color: $black;
+        transition: transform 0.5s;
+      }
+    }
+    .input:focus {
+      &::placeholder {
+        transform: translatey(-1.2em);
+        transition: transform 0.5s;
+      }
+    }
+    .button {
+      padding: 0;
+      width: 9em;
+      height: 2.5em;
+      margin-left: auto;
+      cursor: pointer;
+      font-family: $font-stack;
+      font-size: 1.5em;
+      background: $green;
+      color: $off-white;
+      font-weight: bolder;
+      box-shadow: 5px 5px 5px $black;
+    }
+  }
+}

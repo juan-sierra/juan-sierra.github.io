@@ -1,7 +1,8 @@
 #work {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   .work__head {
     display: flex;
     align-items: center;
@@ -17,8 +18,6 @@
 
   .projects__wrapper {
     min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
     font-family: $font-stack;
     color: $black;
     margin-top: $gt;
@@ -31,18 +30,6 @@
         font-size: $h3-lg / 2;
         font-weight: lighter;
       }
-    }
-  }
-}
-
-@media (max-width: 900px) {
-  #work {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    .projects__wrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
     }
   }
 }

@@ -13,11 +13,6 @@ head
 body
     main.wrapper
 
-        div.hamburger__menu
-            span.line
-            span.line
-            span.line
-
         aside.sidebar
             nav.nav
                 ul.nav__list
@@ -29,28 +24,25 @@ body
 
                     li.nav__item 
                         a(href="#contact").nav__link contact
+        footer.footer
 
-            footer.footer
-                div.copyright
-                    p.copyright__text Juan Sierra - 2017
-                ul.social__icons
-                    li.social__item.github
-                        a(href="https://github.com/juan-sierra").social__link.github
-                            i.fa.fa-github(aria-hidden='true')
+            ul.social__icons
+                li.social__item.github
+                    a(href="https://github.com/juan-sierra").social__link.github
+                        i.fa.fa-github(aria-hidden='true')
 
-                    li.social__item
-                        a(href="https://codepen.io/juan-sierra/").social__link.codepen
-                            i.fa.fa-codepen(aria-hidden='true')
+                li.social__item
+                    a(href="https://codepen.io/juan-sierra/").social__link.codepen
+                        i.fa.fa-codepen(aria-hidden='true')
 
 
-                    li.social__item
-                        a(href="https://www.linkedin.com/in/juan-sierra-368b84100/").social__link.linkedin
-                            i.fa.fa-linkedin(aria-hidden='true')
+                li.social__item
+                    a(href="https://www.linkedin.com/in/juan-sierra-368b84100/").social__link.linkedin
+                        i.fa.fa-linkedin(aria-hidden='true')
+            div.copyright
+                p.copyright__text Juan Sierra - 2017
 
-                    li.social__item
-                        a(href="https://www.instagram.com/jasierragarcia/").social__link.instagram
-                            i.fa.fa-instagram(aria-hidden='true')
-                            
+
         section#about
             header.about__head
                 h1.name Juan Sierra

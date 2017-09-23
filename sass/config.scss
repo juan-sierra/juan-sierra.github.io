@@ -15,8 +15,4 @@ body {
   max-width: 1200px;
   padding: $gt;
   margin: auto;
-
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: $gt;
 }

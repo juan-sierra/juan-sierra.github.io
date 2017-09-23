@@ -2,11 +2,11 @@
   position: fixed;
   left: 0;
   float: none;
-  background: $off-white;
   height: 100%;
   padding: $gt;
   transition: transform 0.5s ease-in;
   z-index: 1;
+  top: 0;
   .nav {
     padding: $gt;
     .nav__list {
@@ -47,6 +47,35 @@
           background-repeat: no-repeat;
           background-size: 100% 0.3em;
           background-position: 0 98%;
+        }
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: $gt / 10;
+    padding: $gt / 2;
+    width: 100%;
+    font-family: $font-stack;
+    color: $black;
+    .copyright__text {
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .social__icons {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+      .social__item {
+        margin: $gt / 2;
+        padding: $gt / 4;
+        .social__link {
+          color: $black;
+          text-decoration: none;
+          font-size: $a-lg;
         }
       }
     }

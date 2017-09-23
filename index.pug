@@ -29,6 +29,28 @@ body
 
                     li.nav__item 
                         a(href="#contact").nav__link contact
+
+            footer.footer
+                div.copyright
+                    p.copyright__text Juan Sierra - 2017
+                ul.social__icons
+                    li.social__item.github
+                        a(href="#").social__link.github
+                            i.fa.fa-github(aria-hidden='true')
+
+                    li.social__item
+                        a(href="#").social__link.codepen
+                            i.fa.fa-codepen(aria-hidden='true')
+
+
+                    li.social__item
+                        a(href="#").social__link.linkedin
+                            i.fa.fa-linkedin(aria-hidden='true')
+
+                    li.social__item
+                        a(href="#").social__link.instagram
+                            i.fa.fa-instagram(aria-hidden='true')
+                            
         section#about
             header.about__head
                 h1.name Juan Sierra
@@ -36,7 +58,7 @@ body
                     span.underline Developer
 
             article.about__bio
-                - var para = "An awesome dude who loves to code, tacos, and music. I focus on finding solutions to mundane tasks and creating minimal yet meaningful experiences on the web."
+                - var para = "An awesome dude and decent guitar player who loves to code, eat tacos, and listen/create music. I focus on finding solutions to mundane tasks and creating minimal yet meaningful experiences on the web."
                 p.about__para=para
 
         section#work

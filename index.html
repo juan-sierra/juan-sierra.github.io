@@ -1,16 +1,16 @@
-<html>
 
+<html></html>
 <head>
   <title>juan sierra</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./dist/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./dist/css/style.css"/>
   <script src="https://use.typekit.net/ufn3nqv.js"></script>
   <script src="https://use.typekit.net/nvs6qkr.js"></script>
   <script>
-    try { Typekit.load({ async: true }); } catch (e) { }
+    try{Typekit.load({ async: true });}catch(e){}
+    
   </script>
 </head>
-
 <body>
   <main class="wrapper">
     <div class="hamburger__menu"><span class="line"></span><span class="line"></span><span class="line"></span></div>
@@ -22,6 +22,17 @@
           <li class="nav__item"> <a class="nav__link" href="#contact">contact</a></li>
         </ul>
       </nav>
+      <footer class="footer">
+        <div class="copyright">
+          <p class="copyright__text">Juan Sierra - 2017</p>
+        </div>
+        <ul class="social__icons">
+          <li class="social__item github"><a class="social__link github" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li class="social__item"><a class="social__link codepen" href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+          <li class="social__item"><a class="social__link linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li class="social__item"><a class="social__link instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </footer>
     </aside>
     <section id="about">
       <header class="about__head">
@@ -29,8 +40,7 @@
         <h2 class="role">Front End <span class="underline">Developer</span></h2>
       </header>
       <article class="about__bio">
-        <p class="about__para">An awesome dude who loves to code, tacos, and music. I focus on finding solutions to mundane tasks and creating minimal
-          yet meaningful experiences on the web.</p>
+        <p class="about__para">An awesome dude and decent guitar player who loves to code, eat tacos, and listen/create music. I focus on finding solutions to mundane tasks and creating minimal yet meaningful experiences on the web.</p>
       </article>
     </section>
     <section id="work">
@@ -50,11 +60,10 @@
       </div>
     </section>
     <section id="contact">
-      <form class="form" method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
+      <form class="form" method="POST" action="https://formspree.io/jasierra.garcia@gmail.com">
         <h2 class="contact__title">Contact me!</h2>
-        <input class="input name" type="name" name="name" placeholder="Name" required="required" autocomplete="autocomplete" />
-        <input class="input email" type="email" name="email" placeholder="Email" required="required" autocomplete="autocomplete"
-        />
+        <input class="input name" type="name" name="name" placeholder="Name" required="required" autocomplete="autocomplete"/>
+        <input class="input email" type="email" name="email" placeholder="Email" required="required" autocomplete="autocomplete"/>
         <textarea class="input message" name="message" placeholder="Message" rows="1" required="required"></textarea>
         <button class="button send" type="submit">Send</button>
       </form>

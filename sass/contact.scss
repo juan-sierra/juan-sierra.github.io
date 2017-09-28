@@ -9,7 +9,7 @@
 
     .contact__title {
       font-family: $fancy-font;
-      font-size: $h2-md;
+      font-size: calc(1vw + 2vh + 2vmin);
       margin: auto;
       color: $black;
     }

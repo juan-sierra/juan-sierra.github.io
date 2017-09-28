@@ -6,7 +6,7 @@
   width: 12%;
   background: $off-white;
   // padding: $gt;
-  transition: width 0.5s ease-in;
+  transition: width 0.5s linear;
   top: 0;
   .nav {
     padding: $gt;
@@ -47,12 +47,6 @@
             transition: background-size 0.3s linear;
           }
         }
-        .active {
-          background-image: linear-gradient(to right, $green 100%, $green 50%);
-          background-repeat: no-repeat;
-          background-size: 100% 0.3em;
-          background-position: 0 98%;
-        }
       }
     }
   }
@@ -61,7 +55,7 @@
 @media only screen and (max-width: 1500px) {
   .sidebar {
     width: 0;
-    transition: width 0.5s ease-out;
+    transition: width 0.5s linear;
   }
   .nav {
     position: fixed;

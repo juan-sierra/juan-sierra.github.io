@@ -1,10 +1,10 @@
 // normalize css
 @import "normalize";
 // interface font
-@import url('https://rsms.me/interface/interface.css');
+@import url('https://rsms.me/inter/inter-ui.css');
 
 // font family
-$font-stack: Interface, sans-serif;
+$font-stack: "Inter UI", sans-serif;
 
 $fancy-font: "chippewa-falls", sans-serif;
 
@@ -37,7 +37,7 @@ $a-md: 1.2em;
 
 $white: #f4f2f3;
 $black: #373f51;
-$blue: #59A5D8;
+$blue: #59a5d8;
 $green: #84dcc6;
 $grey: #acb0bd;
 $off-white: #f0f2ef;

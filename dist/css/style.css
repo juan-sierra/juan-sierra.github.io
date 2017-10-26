@@ -811,7 +811,7 @@ body {
   height: 100%;
   width: 12%;
   background: #f0f2ef;
-  transition: width 0.5s linear;
+  transition: width 0.4s ease-in;
   top: 0; }
   .sidebar .nav {
     padding: 1.5em; }
@@ -854,7 +854,7 @@ body {
     .nav .nav__list {
       display: flex;
       transform: translateX(0);
-      transition: transform 0.5s ease-out; } }
+      transition: transform 0.3s ease-out; } }
 
 #about {
   height: 100vh;
@@ -886,7 +886,6 @@ body {
       font-family: "Inter UI", sans-serif;
       line-height: 1.5em;
       text-align: left;
-      color: #373f51;
       padding: 0; }
 
 #work {
@@ -904,18 +903,19 @@ body {
       font-family: "chippewa-falls", sans-serif;
       color: #373f51;
       font-weight: lighter; }
-  #work .projects__wrapper {
-    min-height: 100vh;
+  #work .github__link {
     font-family: "Inter UI", sans-serif;
-    color: #373f51;
-    margin-top: 1.5em; }
-    #work .projects__wrapper .card {
-      flex: 0 0 50%;
-      padding: 1.5em;
-      margin: 1.5em; }
-      #work .projects__wrapper .card .project__name {
-        font-size: 2em;
-        font-weight: lighter; }
+    padding: 0;
+    margin: 0; }
+  #work .github__link > a {
+    text-decoration: none;
+    color: #59a5d8;
+    font-size: 1.5em; }
+
+@media only screen and (max-width: 900px) {
+  #work {
+    display: flex;
+    flex-direction: column; } }
 
 #contact {
   height: 100vh;

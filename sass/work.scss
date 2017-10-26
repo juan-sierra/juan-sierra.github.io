@@ -15,21 +15,21 @@
       font-weight: lighter;
     }
   }
-
-  .projects__wrapper {
-    min-height: 100vh;
+  .github__link {
     font-family: $font-stack;
-    color: $black;
-    margin-top: $gt;
+    padding: 0;
+    margin: 0;
+  }
+  .github__link > a {
+    text-decoration: none;
+    color: $blue;
+    font-size: $a-lg;
+  }
+}
 
-    .card {
-      flex: 0 0 50%;
-      padding: $gt;
-      margin: $gt;
-      .project__name {
-        font-size: $h3-lg / 2;
-        font-weight: lighter;
-      }
-    }
+@media only screen and (max-width: 900px) {
+  #work {
+    display: flex;
+    flex-direction: column;
   }
 }

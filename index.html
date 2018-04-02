@@ -1,88 +1,54 @@
+<!DOCTYPE html>
 
-<html></html>
+<html>
+
 <head>
-  <title>juan sierra</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="./dist/css/style.css"/>
-  <script src="https://use.typekit.net/ufn3nqv.js"></script>
-  <script src="https://use.typekit.net/nvs6qkr.js"></script>
-  <script>
-    try{Typekit.load({ async: true });}catch(e){}
-    
-  </script>
+    <title>juan sierra</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body>
-  <main class="wrapper">
-    <aside class="navbar">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
-          <li class="nav__item"><a class="nav__link" href="#work">work</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <section id="about">
-      <header class="about__head">
-        <h1 class="name">Juan Sierra</h1>
-        <h2 class="role">Front End <span class="outline">Developer</span></h2>
-      </header>
-      <article class="about__bio">
-        <p class="about__para">An awesome dude who loves code, tacos, and music. I focus on finding solutions to mundane tasks and creating minimal yet meaningful experiences on the web.</p>
-      </article>
-    </section>
-    <section id="work">
-      <header class="work__head">
-        <h2 class="work__title">Work</h2>
-      </header>
-      <div class="card__wrapper">
-        <article class="card">
-          <header class="card__head">
-            <h3 class="card__name">Pro 1</h3>
-          </header>
-          <div class="card__description"></div>
-        </article>
-        <article class="card">
-          <header class="card__head">
-            <h3 class="card__name">Pro 1</h3>
-          </header>
-          <div class="card__description"></div>
-        </article>
-        <article class="card">
-          <header class="card__head">
-            <h3 class="card__name">Pro 1</h3>
-          </header>
-          <div class="card__description"></div>
-        </article>
-        <article class="card">
-          <header class="card__head">
-            <h3 class="card__name">Pro 1</h3>
-          </header>
-          <div class="card__description"></div>
-        </article>
-      </div>
-    </section>
-  </main>
-  <section id="contact">
-    <form class="form" method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
-      <h2 class="contact__title">Contact me!</h2>
-      <input class="input name" type="name" name="name" placeholder="Name" required="required" autocomplete="autocomplete"/>
-      <input class="input email" type="email" name="email" placeholder="Email" required="required" autocomplete="autocomplete"/>
-      <textarea class="input message" name="message" placeholder="Message" rows="1" required="required"></textarea>
-      <button class="button send" type="submit">Send</button>
-    </form>
-  </section>
-  <footer class="footer">
-    <div class="footer__content">
-      <p class="credit">Juan Sierra - 2017</p>
-    </div>
-    <ul class="social">
-      <li class="social__item github"><a class="social__link github" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-      <li class="social__item"><a class="social__link codepen" href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-      <li class="social__item"><a class="social__link linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-      <li class="social__item"><a class="social__link instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-    </ul>
-  </footer>
-  <script src="./dist/js/index.js"></script>
-  <script src="https://use.fontawesome.com/ce5ab495ae.js"></script>
+    <main class="container">
+        <section class="intro">
+
+            <article class="about">
+                <h1 class="about--text">
+                    <span class="name">juan</span>
+                    is a
+                    <span class="role">front-end developer</span>
+                    based in virginia.
+                </h1>
+            </article>
+
+            <article class="brief--intro">
+                <p class="intro--text">i focus on creating minimal yet meaningful experiences on the web. very into music, coffee, and tacos</p>
+            </article>
+
+        </section>
+
+        <section class="work">
+
+            <article class="project">
+                <h2 class="project--name"></h2>
+            </article>
+
+            <article class="project">
+                <h2 class="project--name"></h2>
+            </article>
+
+            <article class="project">
+                <h2 class="project--name"></h2>
+            </article>
+
+            <article class="project">
+                <h2 class="project--name"></h2>
+            </article>
+
+        </section>
+
+    </main>
+    <script src="js/index.js"></script>
 </body>
+
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    background-color: #FFFF;
+}
+
+.container {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5em;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #3C3C3B;
+}
+
+.intro .about .about--text {
+    margin: 0;
+    font-size: 6em;
+    text-shadow: -0.05em -0.05em 0 #84dcc6;
+}
+
+.brief--intro .intro--text {
+    padding: 1.5em;
+    margin: 0;
+    font-size: 2.5em;
+    text-align: right;
+}

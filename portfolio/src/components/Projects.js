@@ -4,12 +4,12 @@ import styled from "styled-components"
 
 const Projects = () => (
     <div>
-        <ProjectName>hello</ProjectName>
+        <ProjectName>projects</ProjectName>
     </div>
 )
 
 const ProjectName = styled(H1)`
-    font-size: 20rem;
+    font-size: 5rem;
     font-family: Arial;
     font-weight: lighter;
 `

@@ -1,16 +1,22 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const About = styled.section``
+const About = styled.section`
+  font-family: sans-serif;
+`
+
+const Intro = styled.h1`
+  font-size: 3em;
+  font-weight: 500;
+`
 
 const IndexPage = () => (
   <About>
-    <h1>
+    <Intro>
       Juan is currently a Computer Science Major focusing on Web Development. He
       aims to create responsive web applications along with meaningful
       experiences while maintaning carefully crafted code.
-    </h1>
+    </Intro>
     <p>
       Since graduating High School in Virginia in 2013, Juan was offered an
       internship at a local IT firm which kick-started his journey in tech which
@@ -20,7 +26,7 @@ const IndexPage = () => (
     <p>
       Ever since he started working in tech, Juan also became a memeber of the
       freeCodeCamp community and started a Facebook group for his city city. He
-      attended as well as organized coding events with his friend who he met
+      attended as well as organized coding events with a friend who he met
       through the freeCodeCamp Facebook group.
     </p>
     <p>
@@ -28,7 +34,6 @@ const IndexPage = () => (
       Virginia or somewhere in Mexico going out for runs, biking, hanging out
       with friends or family and looking for the best street tacos.
     </p>
-    <Link>View projects</Link>
   </About>
 )
 

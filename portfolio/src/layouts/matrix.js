@@ -1,3 +1,12 @@
+// master styled components
+import styled, { injectGlobal } from 'styled-components'
+
+injectGlobal`
+
+* {
+  font-family: sans-serif;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -622,3 +631,6 @@ pre tt:after {
     font-size: 100%;
   }
 }
+`
+// Individual sample elements
+// sectioning

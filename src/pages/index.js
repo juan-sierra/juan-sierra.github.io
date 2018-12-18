@@ -1,55 +1,61 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import Layout from '../components/layout'
 
-const H1 = styled.h1`
-  font-size: 8rem;
-  text-align: right;
-  display: grid;
-  grid-template-columns: 2;
+const white = '#FFFF'
+const offWhite = '#EEEE'
+const orange = '#FA9581'
+const blue = '#8BACBD'
+
+const IndexWrapper = styled.div`
+  height: 100vh;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 15em;
 `
 
-const FirstName = styled.span``
-const LastName = styled.span`
-  font-size: 8.5rem;
-  position: relative;
-  top: -50px;
-  left: -20px;
-  z-index: -1;
-`
-
-const AboutPara = styled.p`
-  font-size: 1.5rem;
+const Header = styled.header`
+  min-width: 100%;
+  background: #ffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5em;
+  border-bottom: 2px solid #eeee;
+  box-shadow: 2px 2px 2px #eeee;
 `
 
 const IndexPage = () => (
   <Layout>
-    <H1>
-      <FirstName>Juan</FirstName>
-      <LastName>Sierra</LastName>
-    </H1>
-    <AboutPara>
-      Currently a Computer Science Major focusing on Web Development. I aim to
-      create responsive web applications along with meaningful experiences while
-      mainting carefully crafted code.
-    </AboutPara>
-    <AboutPara>
-      Since graduating High School in Virginia in 2013, I was offered an
-      internship at a local Startup which kickstarted my journey in tech. This
-      opportunity opened the door to work with other awesome companies such as
-      Facebook (as a contractor.)
-    </AboutPara>
-    <AboutPara>
-      When I started working in tech, I became a memember of the freeCodeCamp
-      community and started a Facebook group for my city. I attened as well as
-      organized coding events with a friend who I met through the freeCodeCamp
-      group.
-    </AboutPara>
-    <AboutPara>
-      When I'm not infront of a computer I can be found either in Leesburg,
-      Virgnia or somewhere in Mexico going out for runs, biking, hanging out
-      with friends or family, and looking for the best street tacos.
-    </AboutPara>
+    <Header>
+      <h1>Juan Sierra</h1>
+    </Header>
+    <IndexWrapper>
+      <section>
+        <p>
+          Juan Sierra is a Front End Developer based in the DMV area specifally
+          Virginia. He focus on building minimal yet meaning experiences on the
+          web. For jobs or freelance work get in touch - here -
+        </p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+
+        <ul>
+          <li>
+            <a href="#">jasierra.garcia@gmail.com</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">Github</a>
+          </li>
+        </ul>
+      </section>
+    </IndexWrapper>
   </Layout>
 )
 

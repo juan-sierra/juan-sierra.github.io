@@ -2,10 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
-import Menu from './menu'
+import Container from './Matrix'
 
-import { Container } from '../assets/Matrix'
+const MainCointainer = styled(Container)`
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,8 +33,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Menu />
-        <Container>{children}</Container>
+        <MainCointainer>{children}</MainCointainer>
       </>
     )}
   />

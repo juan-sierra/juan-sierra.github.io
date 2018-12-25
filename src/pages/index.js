@@ -27,13 +27,28 @@ const Header = styled.header`
   box-shadow: 2px 2px 2px #eeee;
 `
 
+const FirstName = styled.h1`
+  font-size: 7em;
+  margin: 0;
+  padding: 0;
+`
+
+const LastName = styled.h1`
+  font-size: 7em;
+  margin: 0;
+  padding: 0;
+  right: 0.62em;
+  bottom: 0.62em;
+  position: relative;
+`
+
 const IndexPage = () => (
   <Layout>
-    <Header>
-      <h1>Juan Sierra</h1>
-    </Header>
+    <Header />
     <IndexWrapper>
       <section>
+        <FirstName>Juan</FirstName>
+        <LastName>Sierra</LastName>
         <p>
           Juan Sierra is a Front End Developer based in the DMV area specifally
           Virginia. He focus on building minimal yet meaning experiences on the

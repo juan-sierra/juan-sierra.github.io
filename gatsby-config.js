@@ -17,6 +17,16 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui'
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Domine`,
+          `Open Sans`,
+          `Serif\:300,400,400i,700` // you can also specify font weights and styles
+        ]
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline

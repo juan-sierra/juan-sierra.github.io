@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/static`,
   siteMetadata: {
     title: "Juan Sierra"
   },
@@ -21,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModuel: "src/utils/typography"
+        pathToConfigModule: "src/utils/typography"
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

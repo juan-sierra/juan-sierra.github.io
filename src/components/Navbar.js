@@ -5,43 +5,49 @@ import styled from "styled-components";
 const NavWrapper = styled.nav`
   background: #eeee;
   padding: 3vmin 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const Logo = styled.div`
+  h1 {
+    font-size: 7vmin;
+  }
 `;
 
 const NavUl = styled.ul`
   list-style: none;
-  padding: 0;
   margin: 0;
-
   display: flex;
-  justify-content: flex-end;
 `;
 
-const NavLi = styled.li`
-  padding: 1em;
+const NavItem = styled.li`
+  padding: 3vmin;
 `;
 
 const GatsLink = styled(GatsbyLink)`
   text-decoration: none;
   color: black;
-  font-size: 2.5vmin;
-  color: black;
+  font-size: 4vmin;
 `;
 
 const Navbar = () => (
   <NavWrapper>
-    {/* <h1>JS</h1> */}
+    <Logo>
+      <h1>JS</h1>
+    </Logo>
     <NavUl>
-      <NavLi>
-        <GatsLink to="/">Home</GatsLink>
-      </NavLi>
-      <NavLi>
-        <GatsLink to="/projects">Projects</GatsLink>
-      </NavLi>
-      <NavLi>
-        <GatsLink to="/contact">Contact</GatsLink>
-      </NavLi>
+      <NavItem>
+        <GatsLink to="/">about</GatsLink>
+      </NavItem>
+      <NavItem>
+        <GatsLink to="/projects">projects</GatsLink>
+      </NavItem>
+      <NavItem>
+        <GatsLink to="/contact">contact</GatsLink>
+      </NavItem>
     </NavUl>
   </NavWrapper>
 );
-
 export default Navbar;

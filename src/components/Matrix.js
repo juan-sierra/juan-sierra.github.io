@@ -16,15 +16,25 @@ export const Container = styled.div`
   }
 
   h1 {
-    font-size: 10vmin;
+    font-size: 12vw;
   }
 
   h2 {
-    font-size: 8.5vmin;
+    font-size: 9vw;
+  }
+
+  h3 {
+    font-size: 7vw;
   }
 
   p {
-    font-size: 2.5vmin;
+    font-size: 1.5vw;
+  }
+
+  @media (max-width: 1000px) {
+    p {
+      font-size: 4vw;
+    }
   }
 
   hr {

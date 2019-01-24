@@ -9,22 +9,24 @@ import styled from "styled-components";
 // hotpink = '#EA2F95'
 
 const IndexWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  @media (max-width: 1548px) {
+  padding: 10vmin 1rem;
+  @media (min-width: 1000px) {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
 const IndexHeader = styled.header`
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10vmin 1rem;
+  @media (min-width: 1000px) {
+    color: pink;
+  }
 `;
+
+// display: flex;
+//   flex-flow: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 10vmin 1rem;
 
 const FirstName = styled.h1`
   margin: 0;
@@ -35,16 +37,10 @@ const FirstName = styled.h1`
 const LastName = styled.h1`
   margin: 0;
   padding: 0;
-  right: 0.43em;
-  position: relative;
 `;
 
 const About = styled.section`
   font-family: Open Sans;
-  padding: 10vmin 2rem;
-  @media (max-width: 1548px) {
-    margin-top: -15rem;
-  }
 `;
 
 const AboutP = styled.p``;

@@ -6,8 +6,7 @@ import Card from "../components/card";
 const ProjectsWrapper = styled.div`
   padding: 10vmin 1rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
 const ProjectsHeader = styled.header`
@@ -17,9 +16,7 @@ const ProjectsHeader = styled.header`
   align-items: center;
 `;
 
-const ProjectsH1 = styled.h1`
-  font-size: 8em;
-`;
+const ProjectsH2 = styled.h2``;
 
 const ProjectsShowCase = styled.section``;
 
@@ -27,7 +24,7 @@ const Projects = () => (
   <Layout>
     <ProjectsWrapper>
       <ProjectsHeader>
-        <ProjectsH1>Projects</ProjectsH1>
+        <ProjectsH2>Projects</ProjectsH2>
       </ProjectsHeader>
 
       <ProjectsShowCase>

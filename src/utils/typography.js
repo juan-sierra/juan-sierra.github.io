@@ -16,6 +16,7 @@ const typography = new Typography({
   headerFontFamily: ["Merriweather", "serif"],
   bodyFontFamily: [
     "Open Sans",
+    "San Francisco",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",

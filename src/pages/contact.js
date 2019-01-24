@@ -4,10 +4,6 @@ import styled from "styled-components";
 
 const ContactWrapper = styled.section`
   padding: 10vmin 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
 `;
 
 const SocialLinks = styled.a`

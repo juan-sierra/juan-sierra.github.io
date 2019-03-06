@@ -23,5 +23,46 @@ div {
 
 h1 {
   font-size: 3.5em;
-  color: #323232;
+  color: #eee;
+}
+
+@keyframes changeColors {
+  0% {
+    backgroundcolor: #9e2a2b;
+  }
+  10% {
+    background: blueviolet;
+  }
+  20% {
+    background: orangered;
+  }
+  30% {
+    background: fuchsia;
+  }
+  40% {
+    background: greenyellow;
+  }
+  50% {
+    background: #dac4f7;
+  }
+  60% {
+    background: #f0ec57;
+  }
+  70% {
+    background: #d81e5b;
+  }
+  80% {
+    background: #fffd98;
+  }
+  90% {
+    background: #59c9a5;
+  }
+  100% {
+    background: #f4989c;
+  }
+}
+
+body:hover {
+  animation: changeColors 10s infinite;
+  transition: color 10s linear;
 }

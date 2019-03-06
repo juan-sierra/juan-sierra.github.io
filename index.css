@@ -62,6 +62,11 @@ h1 {
   }
 }
 
+body:active {
+  animation: changeColors 10s infinite;
+  transition: color 10s linear;
+}
+
 body:hover {
   animation: changeColors 10s infinite;
   transition: color 10s linear;

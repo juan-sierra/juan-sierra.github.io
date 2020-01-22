@@ -123,7 +123,7 @@ const IndexPage = () => (
 
         <Form
           name="contact"
-          method="POST"
+          method="thank-you"
           data-netlify="true"
           honeypot="bot-field"
         >

@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
   padding: 1.5em;
   width: 100%;
-`
+`;
 
 const Nav = styled.nav`
   display: flex;
@@ -15,7 +15,7 @@ const Nav = styled.nav`
     flex-direction: column;
     justify-content: center;
   }
-`
+`;
 
 const Brand = styled.div`
   background: #f7df1d;
@@ -25,26 +25,28 @@ const Brand = styled.div`
   @media (max-width: 900px) {
     margin-bottom: 1.5em;
   }
-`
+`;
 
 const H1 = styled.h1`
   font-size: 3em;
   margin: 0;
-`
+`;
+
+const Ul = styled.ul``;
 
 const ListItem = styled.li`
   list-style: none;
   display: inline;
   padding: 1.5em;
   font-size: 1.2em;
-`
+`;
 const Header = () => (
   <HeaderWrapper>
     <Nav>
       <Brand>
         <H1>Juan Sierra</H1>
       </Brand>
-      <ul>
+      <Ul>
         <ListItem>
           <a href="#Home">Home</a>
         </ListItem>
@@ -59,9 +61,9 @@ const Header = () => (
             Resume
           </a>
         </ListItem>
-      </ul>
+      </Ul>
     </Nav>
   </HeaderWrapper>
-)
+);
 
-export default Header
+export default Header;

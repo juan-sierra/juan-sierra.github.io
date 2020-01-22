@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Juan Sierra`,
+    description: `Front-End Developer who loves coffee!`,
+    author: `@juan-sierra`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,8 +10,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -23,19 +23,19 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-      },
+        display: `minimal-ui`
+      }
     },
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: `gatsby-plugin-styled-components`
     },
     {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ["Merriweather", "Lato"],
-        },
-      },
-    },
-  ],
-}
+          families: ["Merriweather", "Lato"]
+        }
+      }
+    }
+  ]
+};

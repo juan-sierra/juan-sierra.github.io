@@ -1,77 +1,77 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import styled from "styled-components"
-import Image from "../components/image"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import styled from "styled-components";
+import Image from "../components/image";
 
 const Wrapper = styled.section`
   max-width: 970px;
   margin: auto;
   padding: 1.5em;
-`
+`;
 
 const HomeWrapper = styled.section`
   min-height: 90vh;
   display flex;
   flex-direction: column;
   justify-content: center;
-`
+`;
 
 const SpecialLink = styled.a`
   background: #f7df1d;
-`
+`;
 
 const H1 = styled.h1`
   font-size: 3em;
   margin: 0;
   line-height: 1.5em;
   margin-bottom: 1.2em;
-`
+`;
 
 const H2 = styled.h2`
   font-size: 2.5em;
   margin: 0;
   line-height: 1.5em;
   margin-bottom: 1.2em;
-`
+`;
 
 const H3 = styled.h3`
   font-size: 2em;
   margin: 0;
   line-height: 1.5em;
   margin-bottom: 1.2em;
-`
+`;
 
 const P = styled.p`
   font-size: 1.2em;
   margin: 0;
   max-width: 800px;
   line-height: 1.5em;
-`
+`;
 
 const ProjectsWrapper = styled.section`
   height: 100vh;
   display flex;
   flex-direction: column;
   justify-content: center;
-`
+`;
 
 const ContactWrapper = styled.section`
   height: 90vh;
   display flex;
   flex-direction: column;
   justify-content: center;
-`
+`;
 
 const Form = styled.form`
   padding: 1.5em;
-`
+`;
 const Label = styled.label`
   display: flex;
   flex-direction: column;
   padding-bottom: 1.5em;
-`
+`;
 
 const Button = styled.button`
   background: #84de02;
@@ -80,7 +80,7 @@ const Button = styled.button`
   padding: 1em;
   font-size: 1em;
   cursor: pointer;
-`
+`;
 
 const IndexPage = () => (
   <Layout>
@@ -121,7 +121,12 @@ const IndexPage = () => (
       <ContactWrapper id="Contact">
         <H3>Contact me via the form below</H3>
 
-        <Form name="contact" method="POST" data-netlify="true">
+        <Form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          honeypot="bot-field"
+        >
           <P>
             <Label>
               Your Name: <input type="text" name="name" />
@@ -144,6 +149,6 @@ const IndexPage = () => (
       </ContactWrapper>
     </Wrapper>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

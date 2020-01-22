@@ -1,15 +1,35 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-ul {
-    list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Merriweather;
+  color: #23282d;
+}
+
+p,
+a,
+li {
+  font-family: Lato;
+  color: #23282d;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  background: #f7df1d;
 }

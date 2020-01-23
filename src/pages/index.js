@@ -122,11 +122,12 @@ const IndexPage = () => (
         <H3>Contact me via the form below</H3>
 
         <Form
-          name="contact"
-          method="thank-you"
+          name="Portfolio Form"
+          method="POST"
           data-netlify="true"
           honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="Portfolio Form" />
           <P>
             <Label>
               Your Name: <input type="text" name="name" />

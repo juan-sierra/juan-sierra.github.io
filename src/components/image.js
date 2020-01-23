@@ -23,7 +23,7 @@ const Img1 = styled(Img)`
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "head-shot.webp" }) {
+      placeholderImage: file(relativePath: { eq: "head-shot.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

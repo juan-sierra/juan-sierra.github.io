@@ -19,7 +19,7 @@ const HomeWrapper = styled.section`
 `;
 
 const SpecialLink = styled.a`
-  background: #f7df1d;
+  background: #32dbca;
 `;
 
 const H1 = styled.h1`
@@ -27,6 +27,9 @@ const H1 = styled.h1`
   margin: 0;
   line-height: 1.5em;
   margin-bottom: 1.2em;
+  @media (max-width: 900px) {
+    font-size: 2em;
+  }
 `;
 
 const H2 = styled.h2`
@@ -74,12 +77,18 @@ const Label = styled.label`
 `;
 
 const Button = styled.button`
-  background: #84de02;
-  border-style: none;
-  color: #fff;
-  padding: 1em;
+  border: 1px solid #23282d;
+  color: #23282d;
   font-size: 1em;
+  padding: 5px;
   cursor: pointer;
+  background: none;
+  &:hover button {
+    background: #32dbca;
+    color: #eee;
+    border: none;
+    color: #fff;
+  }
 `;
 
 const IndexPage = () => (

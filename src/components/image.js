@@ -5,6 +5,8 @@ import styled from "styled-components";
 
 const Img1 = styled(Img)`
   width: 250px;
+  border: 5px solid #32dbca;
+  border-radius: 50%;
 `;
 
 /*

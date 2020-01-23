@@ -31,5 +31,5 @@ a {
   text-decoration: none;
 }
 a:hover {
-  background: #f7df1d;
+  border-bottom: 2px solid #32dbca;
 }

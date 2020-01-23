@@ -5,16 +5,16 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import "./layout.css"
-import styled from "styled-components"
-import Header from "../components/header"
+import React from "react";
+import "./layout.css";
+import styled from "styled-components";
+import Header from "../components/header";
 
-const Container = styled.main``
+const Container = styled.main``;
 
 const Footer = styled.footer`
   text-align: center;
-`
+`;
 
 const Layout = ({ children }) => {
   return (
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <Footer>
           <p>
-            Made by Juan Siera with{" "}
+            Made by Juan Sierra with{" "}
             <a href="https://www.gatsbyjs.org/">Gatsby JS</a> ©{" "}
             {new Date().getFullYear()}
             {` `}
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         </Footer>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

@@ -83,12 +83,6 @@ const Button = styled.button`
   padding: 5px;
   cursor: pointer;
   background: none;
-  &:hover ${Button} {
-    background: #32dbca;
-    color: #eee;
-    border: none;
-    color: #fff;
-  }
 `;
 
 const IndexPage = () => (

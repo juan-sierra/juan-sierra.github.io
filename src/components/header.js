@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 const HeaderWrapper = styled.header`
   padding: 1.5em;
   width: 100%;
-`;
+`
 
 const Nav = styled.nav`
   display: flex;
@@ -15,7 +15,7 @@ const Nav = styled.nav`
     flex-direction: column;
     justify-content: center;
   }
-`;
+`
 
 const Brand = styled.div`
   background: #f7df1d;
@@ -25,21 +25,21 @@ const Brand = styled.div`
   @media (max-width: 900px) {
     margin-bottom: 1.5em;
   }
-`;
+`
 
 const H1 = styled.h1`
   font-size: 3em;
   margin: 0;
-`;
+`
 
-const Ul = styled.ul``;
+const Ul = styled.ul``
 
 const ListItem = styled.li`
   list-style: none;
   display: inline;
   padding: 1.5em;
   font-size: 1.2em;
-`;
+`
 const Header = () => (
   <HeaderWrapper>
     <Nav>
@@ -57,13 +57,13 @@ const Header = () => (
           <a href="#Contact">Contact</a>
         </ListItem>
         <ListItem>
-          <a href="https://drive.google.com/file/d/1Hfpohuz2xs4znvAPKDsmidXKI4BI0jFr/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1iEgAwBoUZKZmeIRAv5I9Y1S8CKWM2Htf/view?usp=sharing">
             Resume
           </a>
         </ListItem>
       </Ul>
     </Nav>
   </HeaderWrapper>
-);
+)
 
-export default Header;
+export default Header

@@ -57,7 +57,7 @@ const Header = () => (
           <a href="#Contact">Contact</a>
         </ListItem>
         <ListItem>
-          <a href="https://drive.google.com/file/d/1iEgAwBoUZKZmeIRAv5I9Y1S8CKWM2Htf/view?usp=sharing">
+          <a href="https://drive.google.com/open?id=1YaWB1l10yMovu-0hzHDPUkc92bB4rxHs">
             Resume
           </a>
         </ListItem>

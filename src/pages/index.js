@@ -1,26 +1,26 @@
-import React from "react";
+import React from "react"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import styled from "styled-components";
-import Image from "../components/image";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import styled from "styled-components"
+import Image from "../components/image"
 
 const Wrapper = styled.section`
   max-width: 970px;
   margin: auto;
   padding: 1.5em;
-`;
+`
 
 const HomeWrapper = styled.section`
   min-height: 90vh;
   display flex;
   flex-direction: column;
   justify-content: center;
-`;
+`
 
 const SpecialLink = styled.a`
   background: #32dbca;
-`;
+`
 
 const H1 = styled.h1`
   font-size: 3em;
@@ -30,51 +30,51 @@ const H1 = styled.h1`
   @media (max-width: 900px) {
     font-size: 2em;
   }
-`;
+`
 
 const H2 = styled.h2`
   font-size: 2.5em;
   margin: 0;
   line-height: 1.5em;
   margin-bottom: 1.2em;
-`;
+`
 
 const H3 = styled.h3`
   font-size: 2em;
   margin: 0;
   line-height: 1.5em;
   margin-bottom: 1.2em;
-`;
+`
 
 const P = styled.p`
   font-size: 1.2em;
   margin: 0;
   max-width: 800px;
   line-height: 1.5em;
-`;
+`
 
 const ProjectsWrapper = styled.section`
   height: 100vh;
   display flex;
   flex-direction: column;
   justify-content: center;
-`;
+`
 
 const ContactWrapper = styled.section`
   height: 90vh;
   display flex;
   flex-direction: column;
   justify-content: center;
-`;
+`
 
 const Form = styled.form`
   padding: 1.5em;
-`;
+`
 const Label = styled.label`
   display: flex;
   flex-direction: column;
   padding-bottom: 1.5em;
-`;
+`
 
 const Button = styled.button`
   border: 1px solid #23282d;
@@ -83,7 +83,10 @@ const Button = styled.button`
   padding: 5px;
   cursor: pointer;
   background: none;
-`;
+  &:hover {
+    background: green;
+  }
+`
 
 const IndexPage = () => (
   <Layout>
@@ -153,6 +156,6 @@ const IndexPage = () => (
       </ContactWrapper>
     </Wrapper>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage
